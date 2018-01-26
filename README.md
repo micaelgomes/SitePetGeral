@@ -14,11 +14,11 @@ SUMÁRIO:
 
 ### Obrigações
   IMPLEMENTAÇÕES OBRIGATÓRIAS: (votadas no MARAPET)
-  -> Atividades de cada Grupo com status realizadas ou em andamento
-  -> Petianos Ativos
-  -> Aba com Estatuto
-  -> Link para o MARAPET
-  -> Institucional (INTERPET, CLAA ... )
+  - Atividades de cada Grupo com status realizadas ou em andamento
+  - Petianos Ativos
+  - Aba com Estatuto
+  - Link para o MARAPET
+  - Institucional (INTERPET, CLAA ... )
 
 ### Gambiarra
 
