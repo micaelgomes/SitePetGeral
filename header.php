@@ -1,12 +1,10 @@
 <?php
 /**
- * The header for our theme
+ * Tema do Site Geral dos Grupos PET da UFMA
  *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package materialize_css
+ * @package SiteGeralPETUFMA
+ * @since SiteGeralPETUFMA 0.1
+ * 
  */
 
 ?><!DOCTYPE html>
