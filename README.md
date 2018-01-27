@@ -1,37 +1,24 @@
-Materialize CSS - Wordpress Theme
-## This theme is under GPL V 3.0 - Please contribute!
-### Idealized by [yurisv](https://www.yurisbv.com.br)
+Site Geral do Grupos PET da UFMA - Wordpress Theme
+## This theme is under GPL V 3.0 
+### Idealized by [Grupo PET de Computação](petcompufma2015@gmail.com)
 ===================================
 
-Theme information
-
-### 1. [Knowledge line](#knowledge-line)
-### 2. [Architecture](#architecture)
-### 3. [Theme Functions](#theme-functions)
-### 4. [Oficializando](#oficializando)
-### 5. [Gambiarra](#gambiarra)
+SUMÁRIO:
+### 1. [Conceito](#Conceito)
+### 2. [Obrigações](#Obrigações)
 
 
-### Linha de conhecimento Knowledge line
-
-Para a construção deste tema, realizei estudos e pesquisas abaixo a lista.
-
-Cursos:
-https://www.schoolofnet.com/ (Todos os cursos de Wordpress)
-
-Tutoriais:
-http://www.escolawp.com/2011/01/guia-completo-para-criar-template-wordpress/
-https://www.34sp.com/blog/wordpress-materialized-creating-material-design-theme-pt-1-theme-setup/
-https://www.34sp.com/blog/wordpress-materialized-creating-material-design-theme-pt-2-customization-colors-styles/
-https://www.34sp.com/blog/wordpress-materialized-creating-material-design-theme-pt-3-sidebars-polish/
+### Conceito
+  -> Criar um ambiente virtual para que petianos, tutores ou interessados possam observar o que anda sendo feito pelos grupos em geral.
 
 
-### Oficializando
-
-  Levantar o que precisa ajustar para enviar o tema para o respositório oficial e para o themeforest.
-  1. Formalizar para a linguagem inglês.
-  2. Configurar traduções.
-
+### Obrigações
+  IMPLEMENTAÇÕES OBRIGATÓRIAS: (votadas no MARAPET)
+  - Atividades de cada Grupo com status realizadas ou em andamento
+  - Petianos Ativos
+  - Aba com Estatuto
+  - Link para o MARAPET
+  - Institucional (INTERPET, CLAA ... )
 
 ### Gambiarra
 

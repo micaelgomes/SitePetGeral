@@ -1,12 +1,10 @@
 <?php
 /**
- * The template for displaying the footer
+ * Tema do Site Geral dos Grupos PET da UFMA
  *
- * Contains the closing of the #content div and all content after.
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package materialize_css
+ * @package SiteGeralPETUFMA
+ * @since SiteGeralPETUFMA 0.1
+ * 
  */
 
 ?>

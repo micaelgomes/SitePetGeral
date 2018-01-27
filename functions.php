@@ -1,11 +1,12 @@
 <?php
 /**
- * materialize css functions and definitions
+ * Tema do Site Geral dos Grupos PET da UFMA
  *
- * @link https://developer.wordpress.org/themes/basics/theme-functions/
- *
- * @package materialize_css
+ * @package SiteGeralPETUFMA
+ * @since SiteGeralPETUFMA 0.1
+ * 
  */
+
 require 'materialize-functions/materialize-pagination.php';
 
 if ( ! function_exists( 'materialize_css_setup' ) ) :

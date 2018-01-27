@@ -5,6 +5,7 @@
  * @author Yurisbv <wordpress@yurisbv.com.br>
  * @link /materialize-css/
  */
+
 class MaterializeSlideWidget extends WP_Widget {
 	/**
 	 * Sets up the widgets name etc
