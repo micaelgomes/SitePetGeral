@@ -161,3 +161,20 @@ footer.page-footer {
 .replaceimg{
     background-color: #F0F0F1;
 }
+
+/*  CCS FOOTER    */
+.footer-comp {
+    background-color: #18CDCA;
+}
+
+.copyright-comp {
+    background-color: #094D4C;
+}
+
+.logofooter {
+    width: 30%;
+}
+
+.border-citacao {
+    border-color: #094D4C;
+}
