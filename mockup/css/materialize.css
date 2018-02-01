@@ -3407,9 +3407,10 @@ nav ul a span.badge {
 }
 
 .row {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   
 }
 
@@ -3509,10 +3510,11 @@ nav ul a span.badge {
 }
 
 .row .col.s12 {
-  width: 100%;
-  margin-left: auto;
-  left: auto;
-  right: auto;
+  width: 60%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20%;
+  
 }
 
 .row .col.offset-s1 {
@@ -3648,11 +3650,12 @@ nav ul a span.badge {
 }
 
 .row .col.offset-s12 {
-  margin-left: 100%;
+  margin-left: 50%;
+    
 }
 
 .row .col.pull-s12 {
-  right: 100%;
+  right: 50%;
 }
 
 .row .col.push-s12 {
@@ -3730,9 +3733,9 @@ nav ul a span.badge {
   }
   .row .col.m12 {
     width: 100%;
-    margin-left: auto;
-    left: auto;
-    right: auto;
+    margin-left: 10px;
+    left: 10px;
+    right: 10px;
   }
   .row .col.offset-m1 {
     margin-left: 8.3333333333%;
@@ -4239,6 +4242,7 @@ nav a {
 nav i,
 nav [class^="mdi-"], nav [class*="mdi-"],
 nav i.material-icons {
+  padding-top: 5px;
   display: block;
   font-size: 24px;
   height: 56px;
@@ -4252,6 +4256,7 @@ nav .nav-wrapper {
 
 @media only screen and (min-width: 993px) {
   nav a.button-collapse {
+    
     display: none;
   }
 }
@@ -4274,7 +4279,10 @@ nav .brand-logo {
   color: #fff;
   display: inline-block;
   font-size: 2.1rem;
-  padding: 0;
+  
+    
+  height: auto !important;
+  max-width: 100%;
 }
 
 nav .brand-logo.center {
@@ -4285,11 +4293,14 @@ nav .brand-logo.center {
 
 @media only screen and (max-width: 992px) {
   nav .brand-logo {
-    left: 50%;
+    
+    top: 15%;
+    left: 49%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
   nav .brand-logo.left, nav .brand-logo.right {
+    bottom: 100px;
     padding: 0;
     -webkit-transform: none;
             transform: none;
@@ -4305,6 +4316,7 @@ nav .brand-logo.center {
 
 nav .brand-logo.right {
   right: 0.5rem;
+  bottom: 1.5rem;
   padding: 0;
 }
 
@@ -4312,7 +4324,7 @@ nav .brand-logo i,
 nav .brand-logo [class^="mdi-"], nav .brand-logo [class*="mdi-"],
 nav .brand-logo i.material-icons {
   float: left;
-  margin-right: 15px;
+  
 }
 
 nav .nav-title {
@@ -4417,7 +4429,7 @@ nav .input-field label.active i {
     min-height: 64px;
   }
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-    height: 64px;
+    height: 70px;
     line-height: 64px;
   }
   .navbar-fixed {

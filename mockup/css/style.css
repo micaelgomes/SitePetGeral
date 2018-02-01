@@ -43,11 +43,20 @@ p {
   #index-banner .section {
     top: 10%;
   }
+
+ .imagemlogo{
+     max-width: 70%;
+     padding-top: 23px;
+  }
 }
 
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 0;
+  }
+  .imagemlogo{
+     max-width: 70%;
+     padding-top: 23px;
   }
 }
 
@@ -103,12 +112,7 @@ footer.page-footer {
 .imagemlogo{
     height: auto !important;
     max-width: 100%;
-    padding-top: 20px;
-    padding-left: 19px;
-}
-
-.imagemlogo a:hover{
-    color: #18CDCA;
+    padding: 20px;
 }
 
 .imgback{
@@ -171,8 +175,6 @@ footer.page-footer {
     background-color: #F0F0F1;
 }
 
-
-
 .footer-comp {
     background-color:  #292C44;
 }
@@ -192,4 +194,8 @@ footer.page-footer {
 
 .icon-color{
     color: #292C44;
+}
+
+.button-space{
+    padding: 30px
 }
