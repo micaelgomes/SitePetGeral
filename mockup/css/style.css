@@ -103,8 +103,8 @@ footer.page-footer {
 .imagemlogo{
     height: auto !important;
     max-width: 100%;
-    padding-top: 22px;
-    padding-left: 40px;
+    padding-top: 20px;
+    padding-left: 19px;
 }
 
 .imagemlogo a:hover{
@@ -141,9 +141,10 @@ footer.page-footer {
 .cabecalho button {
     width: 16%;
     float: left;
-    padding: 10.2px 1px;
-    background-color: black;
-    border-color: black;
+    padding: 12px 1px;
+    background-color: #292C44;
+    border: none;
+    
     border-radius: 0px 10px 10px 0px;
     color: white;
     cursor: pointer;
@@ -153,12 +154,17 @@ footer.page-footer {
 }
 
 .cabecalho button:hover{
-    background-color: white;
-    color: black;
+    background-color: #FF5349;
+    color: #292C44;
+    border: none;
 }
 
 .bannerimg{
     background-color: #18CDCA;
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    
 }
 
 .whey{
@@ -168,7 +174,7 @@ footer.page-footer {
 
 
 .footer-comp {
-    background-color: #18CDCA;
+    background-color:  #292C44;
 }
 
 .copyright-comp {
@@ -176,9 +182,14 @@ footer.page-footer {
 }
 
 .logofooter {
-    width: 30%;
+    height: auto !important;
+    max-width: 100%;
 }
 
 .border-citacao {
-    border-color: #094D4C;
+    border-color: #FF5349;
+}
+
+.icon-color{
+    color: #292C44;
 }
