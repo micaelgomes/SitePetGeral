@@ -1,0 +1,163 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+.menunav{
+    padding-top: 19px;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+  padding-top: 14px;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+
+.parallax-container .section {
+    width: 100%;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+
+
+.menus a {
+    color: black;
+}
+
+.menus{
+    padding-top: 10px;
+}
+
+.button-outside {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.areabuttom{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-radius: 5px;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    background-color: #F0F0F1;
+}
+
+.areabuttom:hover{
+    background-color: #18CDCA;
+    color: white;
+}
+
+.titulos{
+    font-weight: bold;
+}
+
+.color:hover{
+    color: white;
+}
+
+.imagemlogo{
+    height: auto !important;
+    max-width: 100%;
+    padding-top: 22px;
+    padding-left: 40px;
+}
+
+.imagemlogo a:hover{
+    color: #18CDCA;
+}
+
+.imgback{
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    
+    object-fit: contain;
+}
+
+.cabecalho form {
+    width: 100%;
+    float: center;
+    padding: 13%;
+    padding-left: 30%;
+    padding-right: 30%;
+}   
+
+.cabecalho input[type="text"] {
+    background-color: white;
+    width: 80%;
+    float: left;
+    padding: 1px 1px;
+    border-radius: 5px 0px 0px 5px;
+    border-color: white;
+}
+
+.cabecalho button {
+    width: 16%;
+    float: left;
+    padding: 10.2px 1px;
+    background-color: black;
+    border-color: black;
+    border-radius: 0px 10px 10px 0px;
+    color: white;
+    cursor: pointer;
+    
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
+.cabecalho button:hover{
+    background-color: #18CDCA;
+    color: black;
+}
+
+.replaceimg{
+    background-color: #F0F0F1;
+}
