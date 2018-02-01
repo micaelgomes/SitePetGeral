@@ -11,7 +11,7 @@ nav .brand-logo {
   color: #444;
 }
 
-.menunav{
+.menuheader{
     padding-top: 19px;
 }
 
@@ -21,7 +21,7 @@ p {
 
 .button-collapse {
   color: #26a69a;
-  padding-top: 14px;
+  padding-top: 17px;
 }
 
 .parallax-container {
@@ -62,14 +62,12 @@ footer.page-footer {
   margin: 0;
 }
 
-
-
 .menus a {
     color: black;
 }
 
 .menus{
-    padding-top: 10px;
+   padding: 20px;
 }
 
 .button-outside {
@@ -82,10 +80,11 @@ footer.page-footer {
     padding-bottom: 2px;
     padding-left: 0px;
     padding-right: 0px;
-    border-radius: 5px;
+    border-radius: 10px;
+    
     -webkit-transition-duration: 0.2s;
     transition-duration: 0.2s;
-    background-color: #F0F0F1;
+    background-color: white;
 }
 
 .areabuttom:hover{
@@ -154,15 +153,20 @@ footer.page-footer {
 }
 
 .cabecalho button:hover{
-    background-color: #18CDCA;
+    background-color: white;
     color: black;
 }
 
-.replaceimg{
+.bannerimg{
+    background-color: #18CDCA;
+}
+
+.whey{
     background-color: #F0F0F1;
 }
 
-/*  CCS FOOTER    */
+
+
 .footer-comp {
     background-color: #18CDCA;
 }
