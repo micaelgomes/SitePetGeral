@@ -4276,31 +4276,29 @@ nav .button-collapse i {
 
 nav .brand-logo {
   position: absolute;
-  color: #fff;
   display: inline-block;
   font-size: 2.1rem;
   
     
   height: auto !important;
   max-width: 100%;
+
 }
 
 nav .brand-logo.center {
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translateX(-1%);
+          transform: translateX(-1%);
 }
 
 @media only screen and (max-width: 992px) {
   nav .brand-logo {
-    
-    top: 15%;
-    left: 49%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    top: 3px;
+    left: 30%;
+    -webkit-transform: translateX(-1%);
+            transform: translateX(-1%);
   }
   nav .brand-logo.left, nav .brand-logo.right {
-    bottom: 100px;
     padding: 0;
     -webkit-transform: none;
             transform: none;
@@ -4312,6 +4310,36 @@ nav .brand-logo.center {
     right: 0.5rem;
     left: auto;
   }
+    
+  .hidden-desktop{
+        display: none !important;
+   }
+    
+
+}
+
+@media only screen and (max-width: 600px) {
+  nav .brand-logo {
+    top: 11%;
+    left: 24%;
+    right: 17%;
+    -webkit-transform: translateX(-1%);
+            transform: translateX(-1%);
+  }
+  nav .brand-logo.left, nav .brand-logo.right {
+    padding: 0;
+    -webkit-transform: none;
+            transform: none;
+  }
+  nav .brand-logo.left {
+    left: 0.5rem;
+  }
+  nav .brand-logo.right {
+    right: 0.5rem;
+    left: auto;
+  }
+  
+ 
 }
 
 nav .brand-logo.right {

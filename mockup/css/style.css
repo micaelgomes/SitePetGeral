@@ -35,6 +35,7 @@ p {
     width: 100%;
 }
 
+
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
@@ -46,9 +47,16 @@ p {
 
  .imagemlogo{
      max-width: 70%;
-     padding-top: 23px;
+     padding-top: 10%;
   }
- 
+
+  #search-box{
+      padding-right: 5%;
+ }
+  
+
+  
+
 }
 
 @media only screen and (max-width : 600px) {
@@ -57,12 +65,12 @@ p {
   }
   .imagemlogo{
      max-width: 70%;
-     padding-top: 23px;
+     padding-top: 10%;
   }
+
   #search-box{
-        padding-top: 38%;
-        padding-right: 22%;
-  }
+      right: 3%;
+ }
   
 }
 
@@ -132,9 +140,10 @@ footer.page-footer {
 }
 
 #search-box{
-    padding-top: 14%;
-    position: relative;
+    padding-top: 15%;
+    position: sticky;
     width: 100%;
+
     margin: 0;
 }
 
@@ -156,7 +165,7 @@ footer.page-footer {
 }
 
 #search-box input[type="text"]{
-    width: 90%;
+    width: 82.2%;
     padding: 1px 1px 1px 10px;
     color: #333;
     outline: none;
@@ -166,7 +175,7 @@ footer.page-footer {
     
     position: absolute;
     height: 45px;
-    width: 100px;
+    width: 18.8%;
     font-size: 14px;
     color: #fff;
     text-align: center;
