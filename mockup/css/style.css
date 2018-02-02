@@ -180,7 +180,8 @@ footer.page-footer {
 }
 
 .copyright-comp {
-    background-color: #094D4C;
+    background-color: #1F2133 !important;
+    color: white !important;
 }
 
 .logofooter {
