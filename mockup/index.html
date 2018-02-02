@@ -16,12 +16,18 @@
 <body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo"><img src="logoSITEGERAL.png" class="imagemlogo"></a>
+      <a id="logo-container" href="#" class="brand-logo">
+          <picture>
+          <img src="logoSITEGERAL.png" class="imagemlogo">
+          <source src="logominimizada.png" media="(min-width: 600px)">
+          </picture>
+      </a>
       <ul class="right hide-on-med-and-down menuheader">
         <li><a href="#">O que é o PET?</a></li>
         <li><a href="#">ATAS</a></li>
       </ul>
 
+    
       <ul id="nav-mobile" class="side-nav">
           <br>
         <li><a href="#">O que é o PET?</a></li>
@@ -33,10 +39,10 @@
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
-        <div class="cabecalho">
-            <form method="post">
-                <input type="text" placeholder="  Faça uma busca...">
-                <button><i class="material-icons">search</i></button>
+        <div id="search-box">
+            <form method="post" id="search-form">
+                <input  id="search-text" type="text" placeholder=" Faça uma busca...">
+                <button id="search-button"><i class="material-icons searchicon">search</i></button>
             </form>
         </div>
       </div>
@@ -94,7 +100,7 @@
     <div class="section">
       <div class="row">
     
-        <div class="col s12 m4">
+        <div class="col s11 m4">
           <div class="icon-block">
               <p class="light titulos center">Notícias Populares</p>
               <p class="light">Sei la men</p>
@@ -103,7 +109,7 @@
            </div>
          </div>
           
-        <div class="col s12 m4">
+        <div class="col s11 m4">
           <div class="icon-block">
               <p class="light titulos center">Tópicos Populares do Fórum</p>
               <p class="light">Sei la men</p>
@@ -112,7 +118,7 @@
            </div>
          </div>
         
-        <div class="col s12 m4">
+        <div class="col s11 m4">
           <div class="icon-block">
               <p class="light titulos center">Eventos Próximos</p>
               <p class="light">Sei la men</p>
@@ -127,12 +133,12 @@
    <footer class="page-footer footer-comp">
       <div class="container">
           <div class="row">
-              <div class="col l6 s12">
-                  <h1 class="white-text"> <img class="logofooter" src="logofooter.png" alt="logo Branco"> </h1>
+              <div class="col l6 s10">
+                  <div class="white-text"> <img class="logofooter" src="logofooter.png" alt="logo Branco"> </div>
                       <!--<p class="grey-text text-lighten-4">--> <blockquote class="border-citacao"> O PET é desenvolvido por grupos de estudantes, com tutoria de um docente, organizados a partir de formações em nível de graduação nas Instituições de Ensino Superior do País orientados pelo princípio da indissociabilidade entre ensino, pesquisa e extensão e da educação tutorial.
                       </blockquote> 
               </div>
-              <div class="col l4 offset-l2 s12">
+              <div class="col l4 offset-l2 s10">
                   <h5 class="white-text">Links</h5>
                   <ul>
                       <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
@@ -145,9 +151,8 @@
       </div>
       <div class="footer-copyright copyright-comp">
           <div class="container">
-              Universidade Federal do Maranhão <br />
-              Pet de Computação <br />
-              <br />
+              Universidade Federal do Maranhão /
+              Pet de Computação /
               Copyright © 2018 - 0.0.2  
           </div>
       </div>

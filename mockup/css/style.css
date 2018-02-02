@@ -48,6 +48,7 @@ p {
      max-width: 70%;
      padding-top: 23px;
   }
+ 
 }
 
 @media only screen and (max-width : 600px) {
@@ -58,6 +59,11 @@ p {
      max-width: 70%;
      padding-top: 23px;
   }
+  #search-box{
+        padding-top: 38%;
+        padding-right: 22%;
+  }
+  
 }
 
 .icon-block {
@@ -125,49 +131,70 @@ footer.page-footer {
     object-fit: contain;
 }
 
-.cabecalho form {
+#search-box{
+    padding-top: 14%;
+    position: relative;
     width: 100%;
-    float: center;
-    padding: 13%;
-    padding-left: 30%;
-    padding-right: 30%;
-}   
-
-.cabecalho input[type="text"] {
-    background-color: white;
-    width: 80%;
-    float: left;
-    padding: 1px 1px;
-    border-radius: 5px 0px 0px 5px;
-    border-color: white;
+    margin: 0;
 }
 
-.cabecalho button {
-    width: 16%;
-    float: left;
-    padding: 12px 1px;
-    background-color: #292C44;
+#search-form{
+    height: 45px;
     border: none;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius: 5px;
+    background-color: white;
+    overflow: hidden;
+}
+
+#search-text{
+    font-size: 14px;
+    color: #ddd;
+    border-width: 0;
+    background: transparent;
+}
+
+#search-box input[type="text"]{
+    width: 90%;
+    padding: 1px 1px 1px 10px;
+    color: #333;
+    outline: none;
+}
+
+#search-button {
     
-    border-radius: 0px 10px 10px 0px;
-    color: white;
+    position: absolute;
+    height: 45px;
+    width: 100px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 42px;
+    border-width: 0;
+    background-color: #292C44;
+
+    -webkit-border-radius: 0px 5px 5px 0px;
+    -moz-border-radius: 0px 5px 5px 0px;
+    border-radius: 0px 5px 5px 0px;
     cursor: pointer;
-    
+}
+
+#search-box button:hover{
     -webkit-transition-duration: 0.2s;
     transition-duration: 0.2s;
+    background-color: #4d90fe;
+    
+    color: white;
+    border: none;
 }
 
-.cabecalho button:hover{
-    background-color: #FF5349;
-    color: #292C44;
-    border: none;
+.searchicon{
+    padding-top: 10px;
 }
 
 .bannerimg{
     background-color: #18CDCA;
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
     
 }
 

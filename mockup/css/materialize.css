@@ -3497,7 +3497,7 @@ nav ul a span.badge {
 
 .row .col.s10 {
   width: 83.3333333333%;
-  margin-left: auto;
+  margin-left: 14px;
   left: auto;
   right: auto;
 }
@@ -3510,10 +3510,10 @@ nav ul a span.badge {
 }
 
 .row .col.s12 {
-  width: 60%;
+  width: 90%;
   margin-bottom: 20px;
   margin-top: 20px;
-  margin-left: 20%;
+  margin-left: 6%;
   
 }
 
