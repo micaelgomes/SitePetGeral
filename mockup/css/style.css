@@ -211,6 +211,10 @@ footer.page-footer {
     background-color: #F0F0F1;
 }
 
+.text-footer {
+    text-align: justify;
+}
+
 .footer-comp {
     background-color:  #292C44;
 }
@@ -250,6 +254,12 @@ footer.page-footer {
     background-color: #18CDCA;
     color: white;
     height: 200px !important;
+    text-shadow: 2px 2px #444;
+}
+
+.title-petianos p{
+    text-shadow: none;
+    color: #444;
 }
 
 .sidebar-petianos {
@@ -272,4 +282,13 @@ footer.page-footer {
         padding-left: 1% !important;
         padding-right: 1% !important;
     }
+}
+
+.not-found{
+    text-align: center;
+    padding: 10%;
+    font-size: 36px;
+    color: #FFF;
+    background-color: #18CDCA;
+    text-shadow: 2px 2px #444;
 }
