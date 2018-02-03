@@ -237,3 +237,39 @@ footer.page-footer {
     padding: 30px
 }
 
+.container-petianos {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 7% !important;
+    padding-right: 5% !important;
+}
+
+.title-petianos {
+    padding-top: 3%;
+    padding-left: 17%;
+    background-color: #18CDCA;
+    color: white;
+    height: 200px !important;
+}
+
+.sidebar-petianos {
+    padding-top: 3% !important;
+    padding-right: 5% !important;
+
+}
+
+.sidebar-petianos p {
+    padding-top: 3%;
+    padding-right: 5% !important;
+    font-size: 20px !important;   
+    text-align: justify;  
+}
+
+@media only screen and ( max-width : 500px ) {
+    .container-petianos {
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-left: 1% !important;
+        padding-right: 1% !important;
+    }
+}
