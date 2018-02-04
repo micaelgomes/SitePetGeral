@@ -321,3 +321,27 @@ footer.page-footer {
     font-size: 16px;
 }
 
+.admin-panel {
+    background-color: #18CDCA;
+    border: none;
+    margin: 0;
+    padding: 2%;   
+}
+
+.admin-card-title {
+    font-size: 26px !important;
+}
+
+.admin-card {
+    background-color: #4F80E1;
+    width: 300px;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.admin-card img{
+    width: 250px;
+}
+
+.admin-card:hover {
+
+}

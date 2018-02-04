@@ -5279,6 +5279,7 @@ small {
   transition: .3s;
   cursor: pointer;
   vertical-align: middle;
+  padding-right: 10px;
 }
 
 .btn-floating:hover {
