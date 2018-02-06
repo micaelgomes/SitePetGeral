@@ -199,7 +199,8 @@ footer.page-footer {
 }
 
 .searchicon{
-    padding-top: 10px;
+    position: sticky;
+    
 }
 
 .bannerimg{
@@ -235,6 +236,8 @@ footer.page-footer {
 
 .icon-color{
     color: #292C44;
+    padding-top: 1%;
+
 }
 
 .button-space{
@@ -264,14 +267,14 @@ footer.page-footer {
 
 .sidebar-petianos {
     padding-top: 3% !important;
-    padding-right: 5% !important;
+    padding-right: % !important;
 
 }
 
 .sidebar-petianos p {
     padding-top: 3%;
     padding-right: 5% !important;
-    font-size: 20px !important;   
+    font-size: 16px !important;   
     text-align: justify;  
 }
 
@@ -294,12 +297,12 @@ footer.page-footer {
 }
 
 .title-post {
-    text-align: center;
-    padding: 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 4.5%;
     font-size: 36px;
     color: #FFF;
     background-color: #18CDCA;
-    text-shadow: 2px 2px #444;
 }
 
 .body-post {
@@ -344,4 +347,54 @@ footer.page-footer {
 
 .admin-card:hover {
 
+}
+
+.titulonews{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.descnews{
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 
+}
+
+.horarionews{
+    font-size: 11px;
+    color: gray;
+    letter-spacing: 1px;
+}
+
+ul.pagination {
+    display: inline-block;
+    padding-bottom: 30px;
+    margin: 0;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: black;
+    font-size: 15px;
+    padding: 6px 16px;
+    text-decoration: none;
+}
+
+ul.pagination li a.active {
+    background-color: #FF5349;
+    color: white;
+}
+
+ul.pagination li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.nunito{
+    font-family: 'Nunito', sans-serif;
+}
+
+.sobreoautor{
+    font-size: 15px;
+    color: gray;
 }
