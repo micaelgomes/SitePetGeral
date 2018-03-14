@@ -6,61 +6,77 @@
  * @since SiteGeralPETUFMA 0.1
  * 
  */
+?>
 
-get_header(); ?>
+<?php get_header(); ?>
 
-	<?php $url = $_SERVER['REQUEST_URI'];?>
-	<?php if($url=='/')
-			{
-				require_once 'featured.php';
-			}
-			else
-			{
-				echo '<div id="parte" class="col s12 m10 l10">';
-			}
-	?>
-
-	<div id="primary" class="content-area">
-		<div class="divider col s12 m12 l12"></div>
-		<main id="main" class="site-main" role="main">
-		<div class="col s12 m10 l10">
-		
-
-		<?php
-		if ( have_posts() ) :
-
-			if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-
-			<?php
-			endif;
-
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
-
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_format() );
-
-			endwhile;
-			wp_materialized_pagination();
-			
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif; ?>
+<div class="whey">
+	<div class="container">
+		<div class="section">
+			<div class="row">
+				<!-- BLOCOS -->
+				<div class="col s12 m4 menus">
+					<a href="#">
+						<div class="icon-block areabuttom">
+							<h2 class="center"><i class="material-icons icon-color">flash_on</i></h2>
+							<h5 class="center">Notícias</h5>
+							<p class="light center">34 notícias cadastradas</p>
+						</div>
+					</a>
+				</div>
+				<div class="col s12 m4 menus">
+					<a href="#">
+						<div class="icon-block areabuttom">
+							<h2 class="center"><i class="material-icons icon-color">forum</i></h2>
+							<h5 class="center">Fórum</h5>
+							<p class="light center">14 ambientes de discursão</p>
+						</div>
+					</a>
+				</div>
+				<div class="col s12 m4 menus">
+					<a href="#">
+						<div class="icon-block areabuttom">
+							<h2 class="center"><i class="material-icons icon-color">event</i></h2>
+							<h5 class="center">Eventos</h5>
+							<p class="light center">Realizações futuras</p>
+						</div>
+					</a>
+				</div>
+			</div>
 		</div>
-		</main><!-- #main -->
-	</div><!-- #primary -->
-	</div><!-- Fim do col m9 l9 -->
+	</div>
+</div>
+
+<div class="container submenu">
+	<div class="section">
+		<div class="row">
+			<div class="col s11 m4">
+				<div class="icon-block">
+					  <p class="light titulos center">Notícias Populares</p>
+					  <p class="light">Sei la men</p>
+					  <hr>
+					  <p class="light">Outro Teste</p>
+				</div>
+			</div>
+
+			<div class="col s11 m4">
+				<div class="icon-block">
+					  <p class="light titulos center">Tópicos Populares do Fórum</p>
+					  <p class="light">Sei la men</p>
+					  <hr>
+					  <p class="light">Outro Teste</p>
+					</div>
+			</div>
+			<div class="col s11 m4">
+				<div class="icon-block">
+					  <p class="light titulos center">Eventos Próximos</p>
+					  <p class="light">Sei la men</p>
+					  <hr>
+					  <p class="light">Outro Teste</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 	
-<?php
-//get side bar movido para o featured
-get_sidebar();
-get_footer();
+<?php get_footer(); ?>
