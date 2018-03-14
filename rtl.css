@@ -1,17 +1,121 @@
 /*
-Theme Name: materialize css
-
-Adding support for languages written in a Right To Left (RTL) direction is easy -
-it's just a matter of overwriting all the horizontal positioning attributes
+Theme Name: Twenty Fifteen
+Description: Adds support for languages written in a Right To Left (RTL) direction.
+It's easy, just a matter of overwriting all the horizontal positioning attributes
 of your CSS stylesheet in a separate stylesheet file named rtl.css.
 
-https://codex.wordpress.org/Right-to-Left_Language_Support
-
+See: https://codex.wordpress.org/Right_to_Left_Language_Support
 */
 
-/*
-body {
-	direction: rtl;
-	unicode-bidi: embed;
-}
-*/
+/**
+ * Table of Contents:
+ *
+ * 1.0 - Reset
+ * 2.0 - Typography
+ * 3.0 - Elements
+ * 4.0 - Forms
+ * 5.0 - Navigations
+ * 6.0 - Accessibility
+ * 7.0 - Alignments
+ * 8.0 - Header
+ * 9.0 - Widgets
+ * 10.0 - Content
+ *   10.1 - Posts and pages
+ *   10.2 - Comments
+ * 11.0 - Media Queries
+ *    11.1 - Mobile Large
+ *    11.2 - Tablet Small
+ *    11.3 - Tablet Large
+ *    11.4 - Desktop Small
+ *    11.5 - Desktop Medium
+ *    11.6 - Desktop Large
+ *    11.7 - Desktop X-Large
+ */
+
+
+/**
+ * 1.0 Reset
+ */
+
+/**
+ * 2.0 Typography
+ */
+
+
+/**
+ * 3.0 Elements
+ */
+
+
+/**
+ * 4.0 Forms
+ */
+
+/**
+ * 5.0 Navigations
+ */
+
+/**
+ * 6.0 Accessibility
+ */
+
+/**
+ * 7.0 Alignments
+ */
+
+
+/**
+ * 8.0 Header
+ */
+
+/**
+ * 9.0 Widgets
+ */
+
+/**
+ * 10.0 Content
+ */
+
+/**
+ * 10.1 Posts and pages
+ */
+
+/**
+ * 10.2 Comments
+ */
+
+/**
+ * 11.0 Media Queries
+ */
+
+
+/**
+ * 11.1 Mobile Large 620px
+ */
+
+
+/**
+ * 11.2 Tablet Small 740px
+ */
+
+/**
+ * 11.3 Tablet Large 880px
+ */
+
+
+/**
+ * 11.4 Desktop Small 955px
+ */
+
+/**
+ * 11.5 Desktop Medium 1100px
+ */
+
+/**
+ * 11.6 Desktop Large 1240px
+ */
+
+/**
+ * 11.7 Desktop X-Large 1403px
+ */
+

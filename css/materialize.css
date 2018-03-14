@@ -2124,8 +2124,7 @@
 }
 
 .white {
-  background-color: #F0F0F1 !important;
-  height: 100px;
+  background-color: #FFFFFF !important;
 }
 
 .white-text {
@@ -2583,7 +2582,7 @@ a {
           box-shadow: none !important;
 }
 
-.z-depth-1, , .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {
+.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
@@ -3407,11 +3406,9 @@ nav ul a span.badge {
 }
 
 .row {
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
 }
 
 .row:after {
@@ -3497,7 +3494,7 @@ nav ul a span.badge {
 
 .row .col.s10 {
   width: 83.3333333333%;
-  margin-left: 14px;
+  margin-left: auto;
   left: auto;
   right: auto;
 }
@@ -3510,11 +3507,10 @@ nav ul a span.badge {
 }
 
 .row .col.s12 {
-  width: 90%;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  margin-left: 6%;
-  
+  width: 100%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
 }
 
 .row .col.offset-s1 {
@@ -3650,12 +3646,11 @@ nav ul a span.badge {
 }
 
 .row .col.offset-s12 {
-  margin-left: 50%;
-    
+  margin-left: 100%;
 }
 
 .row .col.pull-s12 {
-  right: 50%;
+  right: 100%;
 }
 
 .row .col.push-s12 {
@@ -3683,8 +3678,6 @@ nav ul a span.badge {
   }
   .row .col.m4 {
     width: 33.3333333333%;
-    top: 10px;
-    bottom: 10px;
     margin-left: auto;
     left: auto;
     right: auto;
@@ -3733,9 +3726,9 @@ nav ul a span.badge {
   }
   .row .col.m12 {
     width: 100%;
-    margin-left: 10px;
-    left: 10px;
-    right: 10px;
+    margin-left: auto;
+    left: auto;
+    right: auto;
   }
   .row .col.offset-m1 {
     margin-left: 8.3333333333%;
@@ -4242,7 +4235,6 @@ nav a {
 nav i,
 nav [class^="mdi-"], nav [class*="mdi-"],
 nav i.material-icons {
-  padding-top: 5px;
   display: block;
   font-size: 24px;
   height: 56px;
@@ -4256,7 +4248,6 @@ nav .nav-wrapper {
 
 @media only screen and (min-width: 993px) {
   nav a.button-collapse {
-    
     display: none;
   }
 }
@@ -4276,27 +4267,23 @@ nav .button-collapse i {
 
 nav .brand-logo {
   position: absolute;
+  color: #fff;
   display: inline-block;
   font-size: 2.1rem;
-  
-    
-  height: auto !important;
-  max-width: 100%;
-
+  padding: 0;
 }
 
 nav .brand-logo.center {
   left: 50%;
-  -webkit-transform: translateX(-1%);
-          transform: translateX(-1%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 @media only screen and (max-width: 992px) {
   nav .brand-logo {
-    top: 0%;
-    left: 30%;
-    -webkit-transform: translateX(-1%);
-            transform: translateX(-1%);
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   nav .brand-logo.left, nav .brand-logo.right {
     padding: 0;
@@ -4310,41 +4297,10 @@ nav .brand-logo.center {
     right: 0.5rem;
     left: auto;
   }
-    
-  .hidden-desktop{
-        display: none !important;
-   }
-    
-
-}
-
-@media only screen and (max-width: 600px) {
-  nav .brand-logo {
-    top: 10%;
-    left: 24%;
-    right: 17%;
-    -webkit-transform: translateX(-1%);
-            transform: translateX(-1%);
-  }
-  nav .brand-logo.left, nav .brand-logo.right {
-    padding: 0;
-    -webkit-transform: none;
-            transform: none;
-  }
-  nav .brand-logo.left {
-    left: 0.5rem;
-  }
-  nav .brand-logo.right {
-    right: 0.5rem;
-    left: auto;
-  }
-  
- 
 }
 
 nav .brand-logo.right {
   right: 0.5rem;
-  bottom: 1.5rem;
   padding: 0;
 }
 
@@ -4352,7 +4308,7 @@ nav .brand-logo i,
 nav .brand-logo [class^="mdi-"], nav .brand-logo [class*="mdi-"],
 nav .brand-logo i.material-icons {
   float: left;
-  
+  margin-right: 15px;
 }
 
 nav .nav-title {
@@ -4457,7 +4413,7 @@ nav .input-field label.active i {
     min-height: 64px;
   }
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-    height: 70px;
+    height: 64px;
     line-height: 64px;
   }
   .navbar-fixed {
@@ -5279,7 +5235,6 @@ small {
   transition: .3s;
   cursor: pointer;
   vertical-align: middle;
-  padding-right: 10px;
 }
 
 .btn-floating:hover {
@@ -8354,19 +8309,10 @@ input[type=range]:focus::-ms-fill-upper {
   visibility: visible;
   -webkit-animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
           animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
-  -webkit-transition: opacity .3s,
- visibility 0s 1s,
- -webkit-transform .3s;
-  transition: opacity .3s,
- visibility 0s 1s,
- -webkit-transform .3s;
-  transition: opacity .3s,
- transform .3s,
- visibility 0s 1s;
-  transition: opacity .3s,
- transform .3s,
- visibility 0s 1s,
- -webkit-transform .3s;
+  -webkit-transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
+  transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
+  transition: opacity .3s, transform .3s, visibility 0s 1s;
+  transition: opacity .3s, transform .3s, visibility 0s 1s, -webkit-transform .3s;
 }
 
 .tap-target {
@@ -8419,19 +8365,10 @@ input[type=range]:focus::-ms-fill-upper {
 
 .tap-target-wave::after {
   visibility: hidden;
-  -webkit-transition: opacity .3s,
- visibility 0s,
- -webkit-transform .3s;
-  transition: opacity .3s,
- visibility 0s,
- -webkit-transform .3s;
-  transition: opacity .3s,
- transform .3s,
- visibility 0s;
-  transition: opacity .3s,
- transform .3s,
- visibility 0s,
- -webkit-transform .3s;
+  -webkit-transition: opacity .3s, visibility 0s, -webkit-transform .3s;
+  transition: opacity .3s, visibility 0s, -webkit-transform .3s;
+  transition: opacity .3s, transform .3s, visibility 0s;
+  transition: opacity .3s, transform .3s, visibility 0s, -webkit-transform .3s;
   z-index: -1;
 }
 
