@@ -1,0 +1,400 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+.menuheader{
+    padding-top: 20px;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+  padding-top: 17px;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+
+.parallax-container .section {
+    width: 100%;
+}
+
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+
+ .imagemlogo{
+     max-width: 70%;
+     padding-top: 10%;
+  }
+
+  #search-box{
+      padding-right: 5%;
+ }
+  
+
+  
+
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+  .imagemlogo{
+     max-width: 70%;
+     padding-top: 10%;
+  }
+
+  #search-box{
+      right: 3%;
+ }
+  
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.menus a {
+    color: black;
+}
+
+.menus{
+   padding: 20px;
+}
+
+.button-outside {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.areabuttom{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-radius: 10px;
+    
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    background-color: white;
+}
+
+.areabuttom:hover{
+    background-color: #18CDCA;
+    color: white;
+}
+
+.titulos{
+    font-weight: bold;
+}
+
+.color:hover{
+    color: white;
+}
+
+.imagemlogo{
+    height: auto !important;
+    max-width: 100%;
+    padding: 20px;
+}
+
+.imgback{
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    
+    object-fit: contain;
+}
+
+#search-box{
+    padding-top: 15%;
+    position: sticky;
+    width: 100%;
+
+    margin: 0;
+}
+
+#search-form{
+    height: 45px;
+    border: none;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius: 5px;
+    background-color: white;
+    overflow: hidden;
+}
+
+#search-text{
+    font-size: 14px;
+    color: #ddd;
+    border-width: 0;
+    background: transparent;
+}
+
+#search-box input[type="text"]{
+    width: 82.2%;
+    padding: 1px 1px 1px 10px;
+    color: #333;
+    outline: none;
+}
+
+#search-button {
+    
+    position: absolute;
+    height: 45px;
+    width: 18.8%;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 42px;
+    border-width: 0;
+    background-color: #292C44;
+
+    -webkit-border-radius: 0px 5px 5px 0px;
+    -moz-border-radius: 0px 5px 5px 0px;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+}
+
+#search-box button:hover{
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    background-color: #4d90fe;
+    
+    color: white;
+    border: none;
+}
+
+.searchicon{
+    position: sticky;
+    
+}
+
+.bannerimg{
+    background-color: #18CDCA;
+    
+}
+
+.whey{
+    background-color: #F0F0F1;
+}
+
+.text-footer {
+    text-align: justify;
+}
+
+.footer-comp {
+    background-color:  #292C44;
+}
+
+.copyright-comp {
+    background-color: #1F2133 !important;
+    color: white !important;
+}
+
+.logofooter {
+    height: auto !important;
+    max-width: 100%;
+}
+
+.border-citacao {
+    border-color: #FF5349;
+}
+
+.icon-color{
+    color: #292C44;
+    padding-top: 1%;
+
+}
+
+.button-space{
+    padding: 30px
+}
+
+.container-petianos {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 7% !important;
+    padding-right: 5% !important;
+}
+
+.title-petianos {
+    padding-top: 3%;
+    padding-left: 17%;
+    background-color: #18CDCA;
+    color: white;
+    height: 200px !important;
+    text-shadow: 2px 2px #444;
+}
+
+.title-petianos p{
+    text-shadow: none;
+    color: #444;
+}
+
+.sidebar-petianos {
+    padding-top: 3% !important;
+    padding-right: % !important;
+
+}
+
+.sidebar-petianos p {
+    padding-top: 3%;
+    padding-right: 5% !important;
+    font-size: 16px !important;   
+    text-align: justify;  
+}
+
+@media only screen and ( max-width : 500px ) {
+    .container-petianos {
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-left: 1% !important;
+        padding-right: 1% !important;
+    }
+}
+
+.not-found{
+    text-align: center;
+    padding: 10%;
+    font-size: 36px;
+    color: #FFF;
+    background-color: #18CDCA;
+    text-shadow: 2px 2px #444;
+}
+
+.title-post {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 4.5%;
+    font-size: 36px;
+    color: #FFF;
+    background-color: #18CDCA;
+}
+
+.body-post {
+    text-align: justify;
+    padding: 1%;
+    padding-left: 7%;
+    padding-right: 7%;
+    font-size: 18px;
+}
+
+.body-icon{
+    padding: 3%;
+}
+
+.body-icon li, i{
+    float: left;
+    padding-left: 25px;
+    padding-right: 10px;
+    font-size: 16px;
+}
+
+.admin-panel {
+    background-color: #18CDCA;
+    border: none;
+    margin: 0;
+    padding: 2%;   
+}
+
+.admin-card-title {
+    font-size: 26px !important;
+}
+
+.admin-card {
+    background-color: #4F80E1;
+    width: 300px;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.admin-card img{
+    width: 250px;
+}
+
+.admin-card:hover {
+
+}
+
+.titulonews{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.descnews{
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 
+}
+
+.horarionews{
+    font-size: 11px;
+    color: gray;
+    letter-spacing: 1px;
+}
+
+ul.pagination {
+    display: inline-block;
+    padding-bottom: 30px;
+    margin: 0;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: black;
+    font-size: 15px;
+    padding: 6px 16px;
+    text-decoration: none;
+}
+
+ul.pagination li a.active {
+    background-color: #FF5349;
+    color: white;
+}
+
+ul.pagination li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.nunito{
+    font-family: 'Nunito', sans-serif;
+}
+
+.sobreoautor{
+    font-size: 15px;
+    color: gray;
+}
