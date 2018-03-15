@@ -94,7 +94,7 @@ p {
      max-width: 70%;
      padding-top: 10%;
   }
-
+  
   #search-box{
       padding-right: 5%;
  }
@@ -111,9 +111,15 @@ p {
 
   #search-box{
       right: 3%;
- }
-  
+  }  
 }
+
+@media only screen and (max-width: 1245px) {
+  .bannerimg{
+    max-height: 390px !important;
+  }
+} 
+
 
 .icon-block {
   padding: 0 15px;
@@ -247,7 +253,7 @@ footer.page-footer {
 
 .bannerimg{
     background-color: #18CDCA;
-    
+    max-height: 590px;
 }
 
 .background-section{
