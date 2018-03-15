@@ -53,7 +53,7 @@ nav .brand-logo {
 }
 
 .menuheader{
-    padding-top: 20px;
+    
 }
 
 p {
@@ -63,6 +63,10 @@ p {
 .button-collapse {
   color: #26a69a;
   padding-top: 17px;
+}
+
+.header-container {
+	
 }
 
 .parallax-container {
@@ -163,7 +167,7 @@ footer.page-footer {
 .imagemlogo{
     height: auto !important;
     max-width: 100%;
-    padding: 20px;
+	padding: 20px;
 }
 
 .imgback{
@@ -177,11 +181,10 @@ footer.page-footer {
 }
 
 #search-box{
-    padding-top: 15%;
-    position: sticky;
+    position: relative;
     width: 100%;
-
-    margin: 0;
+    margin: -43px;
+	padding: 20%;
 }
 
 #search-form{
@@ -195,6 +198,7 @@ footer.page-footer {
 }
 
 #search-text{
+	font-weight: bold;
     font-size: 14px;
     color: #ddd;
     border-width: 0;
@@ -214,6 +218,7 @@ footer.page-footer {
     height: 45px;
     width: 18.8%;
     font-size: 14px;
+	font-weight: bold;
     color: #fff;
     text-align: center;
     line-height: 42px;
@@ -245,12 +250,18 @@ footer.page-footer {
     
 }
 
-.whey{
+.background-section{
     background-color: #F0F0F1;
+}
+
+.border-section {
+	padding-top: 5%;
+	padding-bottom: 3%;
 }
 
 .text-footer {
     text-align: justify;
+	color: white;
 }
 
 .footer-comp {

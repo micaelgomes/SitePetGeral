@@ -70,7 +70,7 @@
         </div>
     </nav>
     <!-- PARALAX SECTION -->
-    <div class="">
+    <div class="header-container">
         <div class="section  no-pad-bot">
             <div class="container">
                 <div id="search-box">
