@@ -1,40 +1,42 @@
 <?php
 /**
- * Tema do Site Geral dos Grupos PET da UFMA
+ * Arquivo de controle de funções para inicialização de aspectos de design do Tema.
  *
  * @package SiteGeralPETUFMA
  * @since SiteGeralPETUFMA 0.1
  * 
  */
 
-//require 'materialize-functions/materialize-pagination.php';
 
 if ( ! function_exists( 'materialize_css_setup' ) ) :
 /**
- * Sets up theme defaults and registers support for various WordPress features.
+ * Configura os padrões do tema e registra o suporte para vários recursos do WordPress.
  *
- * Note that this function is hooked into the after_setup_theme hook, which
- * runs before the init hook. The init hook is too late for some features, such
- * as indicating support for post thumbnails.
+ * Note que esta função está conectada ao hook after_setup_theme, que
+ * é executado antes do gancho init. O gancho init é muito tarde para alguns recursos, como
+ * como indicação de suporte para pós-miniaturas.
  */
+
 function materialize_css_setup() {
 	/*
-	 * Make theme available for translation.
-	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on materialize css, use a find and replace
-	 * to change 'materialize-css' to the name of your theme in all the template files.
+	 * Disponibilizar tema para tradução.
+	 * Traduções podem ser arquivadas no diretório / languages /.
+	 * Se você está construindo um tema baseado em materialize css, use um localizar e substituir
+	 * para alterar 'materialize-css' para o nome do seu tema em todos os arquivos de modelo.
 	 */
+	
 	load_theme_textdomain( 'materialize-css', get_template_directory() . '/languages' );
 
-	// Add default posts and comments RSS feed links to head.
+	// Adicione postagens e comentários padrão de links de feed RSS no cabeçalho.
 	add_theme_support( 'automatic-feed-links' );
 
 	/*
-	 * Let WordPress manage the document title.
-	 * By adding theme support, we declare that this theme does not use a
-	 * hard-coded <title> tag in the document head, and expect WordPress to
-	 * provide it for us.
+	 * Deixe o WordPress gerenciar o título do documento.
+	 * Adicionando suporte ao tema, declaramos que este tema não usa
+	 * codificação <title> codificada no cabeçalho do documento e espera que o WordPress
+	 * fornecer para nós.
 	 */
+	
 	add_theme_support( 'title-tag' );
 
 	add_theme_support( 'custom-logo', array(
@@ -43,24 +45,27 @@ function materialize_css_setup() {
 			'flex-width' => true)
 	);
 
-	/*
-	 * Enable support for Post Thumbnails on posts and pages.
-	 *
-	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
-	 */
+   /*
+	* Ative o suporte para Post Thumbnails em posts e páginas.
+	*
+	* @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
+	*/
+	
 	add_theme_support( 'post-thumbnails' );
 
-	// This theme uses wp_nav_menu() in one location.
+	// Este tema usa wp_nav_menu () em um local.
 	register_nav_menus(
 		array(
 			'primary' => esc_html('Primary'),
 			'secondary' => esc_html('Secondary')
 		)
 	);
+	
 	/*
-	 * Switch default core markup for search form, comment form, and comments
-	 * to output valid HTML5.
+	 * Mudar a marcação principal padrão para formulário de pesquisa, formulário de comentário e comentários
+	 * para saída de HTML5 válido.
 	 */
+	
 	add_theme_support( 'html5', array(
 		'search-form',
 		'comment-form',
@@ -69,35 +74,37 @@ function materialize_css_setup() {
 		'caption',
 	) );
 
-	// Set up the WordPress core custom background feature.
+	// Configure o recurso de plano de fundo personalizado do núcleo do WordPress.
 	add_theme_support( 'custom-background', apply_filters( 'materialize_css_custom_background_args', array(
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
 
-	// Add theme support for selective refresh for widgets.
+	// Adicionar suporte ao tema para atualização seletiva para widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
 }
 endif;
+
 add_action( 'after_setup_theme', 'materialize_css_setup' );
 
-/**
- * Set the content width in pixels, based on the theme's design and stylesheet.
- *
- * Priority 0 to make it available to lower priority callbacks.
- *
- * @global int $content_width
- */
+ /**
+  * Defina a largura do conteúdo em pixels, com base no design e na folha de estilo do tema.
+  *
+  * Prioridade 0 para disponibilizá-lo para callbacks de menor prioridade.
+  *
+  * @global int $content_width
+  */
 function materialize_css_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'materialize_css_content_width', 640 );
 }
 add_action( 'after_setup_theme', 'materialize_css_content_width', 0 );
 
 /**
- * Register widget area.
+ * Registre a área do widget.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
+
 function materialize_css_widgets_init() {
 	register_sidebar(array(
 		'name' => 'header',
@@ -132,7 +139,7 @@ function materialize_css_widgets_init() {
 add_action( 'widgets_init', 'materialize_css_widgets_init' );
 
 /**
- * Enqueue scripts and styles.
+ * Enfileirar scripts e estilos.
  */
 function materialize_css_scripts() {
 	if( !is_admin()){	 

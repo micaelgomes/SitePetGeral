@@ -37,7 +37,7 @@
     <nav class="white" role="navigation">
         <div class="nav-wrapper container">
             <div id="mainlogo">
-                <a id="logo-container" href="#" class="brand-logo imagemlogo hidden-mobile">
+                <a id="logo-container" href="http://localhost/wordpress/" class="brand-logo imagemlogo hidden-mobile">
                     <?php
                         $custom_logo_id = get_theme_mod( 'custom_logo' );
                         if($custom_logo_id)
@@ -54,10 +54,18 @@
             </div>
             <!-- visualização Desktop -->
             <ul class="right hide-on-med-and-down menuheader nunito">
-                <li><a href="#">HOME</a></li>
+                <!--
+				<li><a href="#">HOME</a></li>
                 <li><a href="#">ESTATUTO</a></li>
                 <li><a href="#">GRUPOS PET</a></li>
-                <li><a href="petianos_ativos.html">PETIANOS</a></li>
+                <li><a href="#">PETIANOS</a></li>
+
+				### padroniza esta coisa
+				-->
+				<li>
+					<?php wp_nav_menu( array('theme_location' => 'primary')); ?>
+				</li>
+				
             </ul>  
             <!-- visualização Mobile -->
             <ul id="nav-mobile" class="side-nav nunito">
@@ -70,18 +78,4 @@
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons" style="color: black">menu</i></a>
         </div>
     </nav>
-    <!-- PARALAX SECTION -->
-    <div class="header-container">
-        <div class="section  no-pad-bot">
-            <div class="container">
-                <div id="search-box">
-                    <form method="post" id="search-form">
-                        <input  id="search-text" type="text" placeholder=" Faça uma busca... ">
-                        <button id="search-button">Pesquisar</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="parallax bannerimg"></div>
-    </div>
-	</header>
+</header>
