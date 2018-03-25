@@ -1,6 +1,6 @@
 <?php
 /**
- * template de demostração de petianos
+ * template de demostração dos Grupos PET
  * Template Name: Petianos
  *
  * @package SiteGeralPETUFMA
@@ -27,7 +27,7 @@
 
   <div class="row">
       <div class="body-post">
-    <div class="container-petianos col s7 m8">
+    <div class="container-petianos col s12 l8 m12">
       <ul class="collapsible popout" data-collapsible="accordion">
         <li>
           <div class="collapsible-header">Computação</div>
@@ -89,7 +89,7 @@
       </ul>  
     </div>
 
-    <div class="col s12 l3 sidebar-petianos">
+    <div class="col s12 l4 sidebar-petianos">
         <h5 class="nunito">Quantos Somos?</h5>
         <hr>
         <p class="">A UFMA possui atualmente 13 (treze) grupos PET junto ao MEC, num total de 156 alunos bolsistas, 13 tutores, além de petianos não bolsistas e voluntários.</p>
