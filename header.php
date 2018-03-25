@@ -34,48 +34,31 @@
 
 <body <?php body_class(); ?>>
 <header>
-    <nav class="white" role="navigation">
-        <div class="nav-wrapper container">
-            <div id="mainlogo">
-                <a id="logo-container" href="http://localhost/wordpress/" class="brand-logo imagemlogo hidden-mobile">
-                    <?php
-                        $custom_logo_id = get_theme_mod( 'custom_logo' );
-                        if($custom_logo_id)
-                        {
-                            $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-                            echo '<img src="'.$image[0].'">';
-                        }
-                        else
-                        {
-                            echo '<p class="blog-title">'.bloginfo('name').'</p>';
-                        }					
-                    ?>	        	
-                </a>   
-            </div>
-            <!-- visualização Desktop -->
-            <ul class="right hide-on-med-and-down menuheader nunito">
-                <!--
-				<li><a href="#">HOME</a></li>
-                <li><a href="#">ESTATUTO</a></li>
-                <li><a href="#">GRUPOS PET</a></li>
-                <li><a href="#">PETIANOS</a></li>
+	<nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="http://localhost/wordpress/" class="brand-logo">
+				<?php
+					$custom_logo_id = get_theme_mod( 'custom_logo' );
+					if($custom_logo_id){
+							$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+							echo '<img src="'.$image[0].'">';
+					}
+					else{
+							echo '<p class="blog-title">'.bloginfo('name').'</p>';
+					}					
+				?>	 
+			</a>
+      
+			<!-- Desktop -->
+			<ul class="right hide-on-med-and-down">
+        <?php wp_nav_menu( array('theme_location' => 'primary')); ?>
+      </ul>
 
-				### padroniza esta coisa
-				-->
-				<li>
-					<?php wp_nav_menu( array('theme_location' => 'primary')); ?>
-				</li>
-				
-            </ul>  
-            <!-- visualização Mobile -->
-            <ul id="nav-mobile" class="side-nav nunito">
-                <br>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ESTATUTO</a></li>
-                <li><a href="#">GRUPOS PET</a></li>
-                <li><a href="#">PETIANOS</a></li>
-            </ul>
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons" style="color: black">menu</i></a>
-        </div>
-    </nav>
+		  <!-- Mobile -->
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+			<ul id="nav-mobile" class="side-nav">
+				<?php wp_nav_menu( array('theme_location' => 'primary')); ?>
+      </ul>
+		</div>
+  </nav>
 </header>
