@@ -15,7 +15,6 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo( get_bloginfo( 'title' ) ); ?></title>
-    <link rel="shortcut icon" href="logotitle.png">
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -30,13 +29,14 @@
     <script src="js/init.js"></script>
 
     <?php wp_head(); ?>
+	
 </head>
 
 <body <?php body_class(); ?>>
 <header>
 	<nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="http://localhost/wordpress/" class="brand-logo">
+    <div class="nav-wrapper container negrito">
+      <a id="logo-container" href="http://localhost/wordpress/" class="brand-logo new-icon">
 				<?php
 					$custom_logo_id = get_theme_mod( 'custom_logo' );
 					if($custom_logo_id){
