@@ -10,6 +10,7 @@
 ?>
 
 <?php get_header(); ?>
+<?php $pagename = get_query_var('pagename'); ?> 
 
 <section>
 	<!-- PARALAX SECTION -->
@@ -17,7 +18,7 @@
 			<div class="section  no-pad-bot">
 					<div class="container">
               <div class = "title-post nunito">
-                <h3>Notícias</h3>
+                <h3><?php echo $pagename ?></h3>
               </div>
 							<div id="search-box-side">
 									<form method="post" id="search-form-side">
@@ -32,18 +33,7 @@
 </section>
 <section>
     <div class="background-section">
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+
     </div>
 </section>
   
