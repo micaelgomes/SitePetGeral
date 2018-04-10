@@ -17,8 +17,8 @@
         <div class="section  no-pad-bot">
             <div class="container">
                 <div id="search-box">
-                    <form method="post" id="search-form">
-                        <input  id="search-text" type="text" placeholder=" Faça uma busca... ">
+                    <form method="post" id="search-form" action= "/wordpress/index.php/busca"/>
+                        <input  name = "search" id="search-text" type="text" placeholder=" Faça uma busca... ">
                         <button id="search-button">Pesquisar</button>
                     </form>
                 </div>
