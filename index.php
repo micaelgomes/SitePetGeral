@@ -70,28 +70,61 @@
 			<div class="row">
 				<div class="col s12 m12 l4">
 					<div class="icon-block">
-						  <p class="light titulos center">Notícias Populares</p>
-						  <p class="light">Sei la men</p>
-						  <hr>
-						  <p class="light">Outro Teste</p>
+						<p class="light titulos center">Notícias Recentes</p>
+						<?php
+							$args = array( 'numberposts' => '3',
+											'orderby' => 'post_date',
+											'order' => 'DESC',
+											'post_type' => 'post',
+											'cat' => 1  
+										);
+							$recent_posts = wp_get_recent_posts( $args );
+							foreach( $recent_posts as $recent ){
+								echo ' <p class="light"><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </p>';
+								echo '<hr>';
+							}
+							wp_reset_query();
+						?>
 					</div>
 				</div>
 
 				<div class="col s12 m12 l4">
 					<div class="icon-block">
-						  <p class="light titulos center">Tópicos Populares do Fórum</p>
-						  <p class="light">Sei la men</p>
-						  <hr>
-						  <p class="light">Outro Teste</p>
+						  <p class="light titulos center">Tópicos Recentes do Fórum</p>
+						  <?php
+								$args = array( 'numberposts' => '3',
+												'orderby' => 'post_date',
+												'order' => 'DESC',
+												'post_type' => 'post',
+												'cat' => 0 
+											);
+								$recent_posts = wp_get_recent_posts( $args );
+								foreach( $recent_posts as $recent ){
+									echo ' <p class="light"><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </p>';
+									echo '<hr>';
+								}
+								wp_reset_query();
+							?>
 						</div>
 				</div>
 				
 				<div class="col s12 m12 l4">
 					<div class="icon-block">
 						  <p class="light titulos center">Eventos Próximos</p>
-						  <p class="light">Sei la men</p>
-						  <hr>
-						  <p class="light">Outro Teste</p>
+						  <?php
+								$args = array( 'numberposts' => '3',
+												'orderby' => 'post_date',
+												'order' => 'DESC',
+												'post_type' => 'post',
+												'cat' => 6 
+											);
+								$recent_posts = wp_get_recent_posts( $args );
+								foreach( $recent_posts as $recent ){
+									echo ' <p class="light"><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </p>';
+									echo '<hr>';
+								}
+								wp_reset_query();
+							?>
 					</div>
 				</div>
           
