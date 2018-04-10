@@ -13,19 +13,19 @@
 <?php get_header(); ?>
 <section>
 	<!-- PARALAX SECTION -->
-    <div class="header-container">
-        <div class="section  no-pad-bot">
-            <div class="container">
-                <div id="search-box">
-                    <form method="post" id="search-form">
-                        <input  id="search-text" type="text" placeholder=" Faça uma busca... ">
-                        <button id="search-button">Pesquisar</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="parallax bannerimg"></div>
-    </div>
+	<div class="header-container">
+		<div class="section  no-pad-bot">
+			<div class="container">
+				<div id="search-box">
+					<form method="post" id="search-form">
+						<input  id="search-text" type="text" placeholder=" Faça uma busca... ">
+						<button id="search-button">Pesquisar</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="parallax bannerimg"></div>
+	</div>
 </section>
 <section>
 	<div class="background-section">
@@ -38,7 +38,8 @@
 							<div class="icon-block areabuttom">
 								<h2 class="center"><i class="material-icons icon-color">flash_on</i></h2>
 								<h5 class="center">Notícias</h5>
-								<p class="light center">34 notícias cadastradas</p>
+								<?php $quant_posts = $wpdb->get_var("SELECT count FROM wp_term_taxonomy WHERE term_taxonomy_id = '1' "); ?>
+								<p class="light center"> <?php echo $quant_posts; ?> notícias cadastradas</p>
 							</div>
 						</a>
 					</div>
@@ -96,7 +97,7 @@
 												'orderby' => 'post_date',
 												'order' => 'DESC',
 												'post_type' => 'post',
-												'cat' => 0 
+												'cat' => 7 
 											);
 								$recent_posts = wp_get_recent_posts( $args );
 								foreach( $recent_posts as $recent ){

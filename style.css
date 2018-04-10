@@ -71,7 +71,6 @@ p {
     width: 100%;
 }
 
-
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
@@ -121,7 +120,11 @@ p {
 		max-width: 200px !important;
 		padding-top: 7px !important;
 		
-	}
+    }
+    
+    .bannerimg {
+        max-height: 0 !important;
+    }
 }
 
 @media only screen and (max-width : 400px) {
@@ -266,8 +269,8 @@ footer.page-footer {
 }
 
 .bannerimg{
-    background-color: #18CDCA;
-    max-height: 590px;
+    background-color: black;
+    max-height: 610px;
 }
 
 .background-section{
