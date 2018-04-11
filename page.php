@@ -13,9 +13,8 @@
 	
 	<div class="title-post nunito">
         <div class="container">
-        	<h3><?php echo $pagename ?></h3>
+        	<h3><?php the_title(); ?></h3>
         </div>
-    </div>
-	
+    </div>   
 	
 <?php get_footer(); ?>

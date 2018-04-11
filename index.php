@@ -84,7 +84,7 @@
 							$recent_posts = wp_get_recent_posts( $args );
 							if($recent_posts){
 								foreach( $recent_posts as $recent ){
-									echo ' <p class="light"><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </p>';
+									echo ' <blockquote class = "border-citacao-post"><p class="light"><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </p></blockquote>';
 									echo '<hr>';
 								}
 								wp_reset_query();
@@ -109,7 +109,7 @@
 								$recent_topic = wp_get_recent_posts( $args );
 								if($recent_topic){
 									foreach( $recent_topic as $recent ){
-										echo ' <p class="light"><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </p>';
+										echo '<blockquote class = "border-citacao-post"> <p class="light"><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </p> </blockquote>';
 										echo '<hr>';
 									}
 									wp_reset_query();
@@ -134,7 +134,7 @@
 								$recent_events = wp_get_recent_posts( $args );
 								if($recent_events){
 									foreach( $recent_events as $recent ){
-										echo ' <p class="light"><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </p>';
+										echo '<blockquote class = "border-citacao-post"> <p class="light"><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </p> </blockquote>';
 										echo '<hr>';
 									}
 									wp_reset_query();

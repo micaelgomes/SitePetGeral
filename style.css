@@ -332,6 +332,10 @@ footer.page-footer {
     border-color: #FF5349;
 }
 
+.border-citacao-post {
+    border-color: #18CDCA;
+}
+
 .icon-color{
     color: #292C44;
     padding-top: 1%;
