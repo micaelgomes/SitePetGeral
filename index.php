@@ -38,7 +38,9 @@
 							<div class="icon-block areabuttom">
 								<h2 class="center"><i class="material-icons icon-color">flash_on</i></h2>
 								<h5 class="center">Notícias</h5>
-								<?php $quant_posts = $wpdb->get_var("SELECT count FROM wp_term_taxonomy WHERE term_taxonomy_id = '1' "); ?>
+								<?php 
+									$quant_posts = $wpdb->get_var("SELECT count FROM wp_term_taxonomy WHERE term_taxonomy_id = '1' "); 
+								?>
 								<p class="light center"> <?php echo $quant_posts; ?> notícias cadastradas</p>
 							</div>
 						</a>
@@ -80,11 +82,16 @@
 											'cat' => 1  
 										);
 							$recent_posts = wp_get_recent_posts( $args );
-							foreach( $recent_posts as $recent ){
-								echo ' <p class="light"><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </p>';
-								echo '<hr>';
+							if($recent_posts){
+								foreach( $recent_posts as $recent ){
+									echo ' <p class="light"><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </p>';
+									echo '<hr>';
+								}
+								wp_reset_query();
+							} else {
+								echo '<br />';
+								echo '<p class="light center"> Nada Cadastrado </p>';
 							}
-							wp_reset_query();
 						?>
 					</div>
 				</div>
@@ -99,12 +106,17 @@
 												'post_type' => 'post',
 												'cat' => 7 
 											);
-								$recent_posts = wp_get_recent_posts( $args );
-								foreach( $recent_posts as $recent ){
-									echo ' <p class="light"><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </p>';
-									echo '<hr>';
+								$recent_topic = wp_get_recent_posts( $args );
+								if($recent_topic){
+									foreach( $recent_topic as $recent ){
+										echo ' <p class="light"><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </p>';
+										echo '<hr>';
+									}
+									wp_reset_query();
+								} else {
+									echo '<br />';
+									echo '<p class="light center"> Nada Cadastrado </p>';
 								}
-								wp_reset_query();
 							?>
 						</div>
 				</div>
@@ -119,12 +131,17 @@
 												'post_type' => 'post',
 												'cat' => 6 
 											);
-								$recent_posts = wp_get_recent_posts( $args );
-								foreach( $recent_posts as $recent ){
-									echo ' <p class="light"><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </p>';
-									echo '<hr>';
+								$recent_events = wp_get_recent_posts( $args );
+								if($recent_events){
+									foreach( $recent_events as $recent ){
+										echo ' <p class="light"><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </p>';
+										echo '<hr>';
+									}
+									wp_reset_query();
+								} else {
+									echo '<br />';
+									echo '<p class="light center"> Nada Cadastrado </p>';
 								}
-								wp_reset_query();
 							?>
 					</div>
 				</div>
