@@ -12,7 +12,7 @@
 
 <?php get_header(); ?>
 <?php 
-
+//Mostra a barra superior de admin, caso o usuario seja adm
 
 $pagename = get_query_var('pagename'); 
 
@@ -43,43 +43,45 @@ $pagename = get_query_var('pagename');
     $posts = my_query_posts($_POST['search']);
    
     if ( $posts!=false){
-    	foreach ($posts as $post){
-    		
+      foreach ($posts as $post){
+        
     ?>
 
       <div class="card-panel card-news nunito">
-        <h5 class="black-text"> <?php echo $post->post_title.$post->ID; ?></h5>
+        <h5 class="black-text"> <?php echo $post->post_title; ?></h5>
         <hr />
           <div class="black-text inside-news"><?php echo $post->post_content; ?>
           </div>
         <hr />
         <?php 
-        $tags = my_query_posts($post->ID);
-        	foreach ($tags as $tag){
-        		if($tag->name!="Sem categoria"){
+        $category = my_query_categories($post->ID);
+        if ( $category!=false){
+          foreach ($category as $cat){
+            if($tag->name!="Sem categoria"){
         ?>
 
-        <div class="chip"> <?php echo $tag->name; ?> <i class="close material-icons">close</i></div>
+        <div class="chip"> <?php echo $cat->name; ?> <i class="close material-icons">close</i></div>
         
       
 
     <?php
-    			}
-    		}
+          }
+        }
+      }
     ?>
 
     </div>
 
     <?php
-    	}
-	}else{
-		?>
-		<div class="card-panel card-news nunito">
+      }
+  }else{
+    ?>
+    <div class="card-panel card-news nunito">
         <h5 class="black-text"> Mano, não foi encontrado! </h5>
  
       </div>
-	<?php
-	}
+  <?php
+  }
     ?>
 
     </div>
