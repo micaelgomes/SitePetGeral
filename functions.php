@@ -75,10 +75,12 @@ function materialize_css_setup() {
 	) );
 
 	// Configure o recurso de plano de fundo personalizado do núcleo do WordPress.
-	add_theme_support( 'custom-background', apply_filters( 'materialize_css_custom_background_args', array(
+	/*
+	add_theme_support( 'custom-footer', apply_filters( 'materialize_css_custom_background_args', array(
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+	*/
 
 	// Adicionar suporte ao tema para atualização seletiva para widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
@@ -94,9 +96,11 @@ add_action( 'after_setup_theme', 'materialize_css_setup' );
   *
   * @global int $content_width
   */
+  
 function materialize_css_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'materialize_css_content_width', 640 );
 }
+
 add_action( 'after_setup_theme', 'materialize_css_content_width', 0 );
 
 /**
@@ -136,7 +140,7 @@ function materialize_css_widgets_init() {
 		'after_title' => '</p>',
 	));
 }
-add_action( 'widgets_init', 'materialize_css_widgets_init' );
+//add_action( 'widgets_init', 'materialize_css_widgets_init' );
 
 /**
  * Enfileirar scripts e estilos.
@@ -146,10 +150,12 @@ function materialize_css_scripts() {
 	 	wp_deregister_script('jquery');
 	 	wp_enqueue_script( 'materialize-css-jquery', 'https://code.jquery.com/jquery-2.1.1.min.js', '', null, true );
 	}
+
+	
 	$themecolors = get_theme_mod('materialize_colors');
 	wp_enqueue_style('material-colors', get_template_directory_uri() . '/css/'. $themecolors);
 
-	 wp_enqueue_style('materialize_css-style', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css', '', null, false);
+	wp_enqueue_style('materialize_css-style', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css', '', null, false);
 	
 	wp_enqueue_style('style', get_stylesheet_uri() );
 	 
@@ -163,27 +169,6 @@ function materialize_css_scripts() {
 }
 add_action('wp_enqueue_scripts', 'materialize_css_scripts' );
 
-/**
- * Implement the Custom Header feature.
- */
-//require get_template_directory() . '/inc/custom-header.php';
-/**
- * Custom template tags for this theme.
- */
-//require get_template_directory() . '/inc/template-tags.php';
-/**
- * Custom functions that act independently of the theme templates.
- */
-//require get_template_directory() . '/inc/extras.php';
-/**
- * Customizer additions.
- */
-//require get_template_directory() . '/inc/customizer.php';
-/**
- * Load Jetpack compatibility file.
- */
-//require get_template_directory() . '/inc/jetpack.php';
-
 /* Colunistas */
 function colunista()
 {
@@ -193,38 +178,32 @@ function colunista()
 }
 
 /*Customizar cores*/
+/* Função que opera as funcionalidades da 'personalizar' */
 function materialize_controls($wp_customize)
 {
-	$wp_customize->add_section( 'materialize_options',
- 	array(
-   'title'      => __('Material Options','materialized'),
-   'description' => 'Personalize seu tema wordpress:',
-   'priority'   => 30,
- )
- );
+	$wp_customize->add_section( 'imagem_footer',
+	array(
+		'title'      => __('Imagem Footer','materialized'),
+		'description' => 'Escolha a imagem do Footer',
+		'priority'   => 30,
+	));
  
-// Add setting
- $wp_customize->add_setting(
-    'materialize_colors',
-    array('default' => 'gnl.css')
- );
+	// Add setting
+	$wp_customize->add_setting(
+		'materialize_colors',
+		array('default' => 'http://localhost/wordpress/wp-content/uploads/2018/03/logofooter.png')
+	);
  
-// Add control 
-	$wp_customize->add_control(
-		'materialize_color_selector',
-		array(
-		    'label' => 'Paleta de Cores',
-		    'section' => 'materialize_options',
-		    'settings' => 'materialize_colors',
-		    'type' => 'select',
-		    'choices' => array(
-		    	'vermelho.css' =>'Vermelho',
-		        'azul.css' => 'Azul',
-		        'preto.css' => 'Preto',
-		        'verde.css' => 'Verde',
-		        'laranja.css' => 'Laranja'),
-		));
+	// Add control 
+	$wp_customize->add_control('materialize_color_selector',
+	array(
+		'label' => 'URL image ?',
+		'section' => 'imagem_footer',
+		'settings' => 'materialize_colors',
+		'type' => 'url'
+	));
 }
+
 add_action('customize_register', 'materialize_controls');
 
 

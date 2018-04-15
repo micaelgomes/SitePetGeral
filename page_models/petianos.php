@@ -10,11 +10,6 @@
 ?>
 
 <?php get_header(); ?>
-	<script>
-		$(document).ready(function(){
-		  $('.collapsible').collapsible();
-		})
-	</script>
 
 	<div class="title-post nunito">
         <div class="container">
@@ -90,9 +85,9 @@
     </div>
 
     <div class="col s12 l4 sidebar-petianos">
-        <h5 class="nunito">Quantos Somos?</h5>
+        <h5 class="nunito flow-text">Quantos Somos?</h5>
         <hr>
-        <p class="">A UFMA possui atualmente 13 (treze) grupos PET junto ao MEC, num total de 156 alunos bolsistas, 13 tutores, além de petianos não bolsistas e voluntários.</p>
+        <p class="flow-text">A UFMA possui atualmente 13 (treze) grupos PET junto ao MEC, num total de 156 alunos bolsistas, 13 tutores, além de petianos não bolsistas e voluntários.</p>
     </div>
       </div>
   </div>

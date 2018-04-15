@@ -168,6 +168,7 @@ p {
 .icon-block {
   padding: 0 15px;
 }
+
 .icon-block .material-icons {
   font-size: inherit;
 }
@@ -336,6 +337,27 @@ footer.page-footer {
     border-color: #18CDCA;
 }
 
+/* unvisited link */
+.border-citacao-post a:link {
+    color: #18CDCA;
+}
+
+/* visited link */
+.border-citacao-post a:visited {
+    color: #18CDCA;
+}
+
+/* mouse over link */
+.border-citacao-post a:hover {
+    color: #FF5349;
+}
+
+/* selected link */
+.border-citacao-post a:active {
+    color: #292C44;
+} 
+    
+
 .icon-color{
     color: #292C44;
     padding-top: 1%;
@@ -413,6 +435,11 @@ footer.page-footer {
     padding-left: 7%;
     padding-right: 7%;
     font-size: 18px;
+}
+
+.body-filosofia {
+    text-align: justify;
+    font-size: 17px;
 }
 
 .body-icon{
