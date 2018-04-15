@@ -19,7 +19,3 @@ SUMÁRIO:
   - Aba com Estatuto
   - Link para o MARAPET
   - Institucional (INTERPET, CLAA ... )
-
-### Gambiarra
-
-   O trexo de código Featured.php, pode se transformar em três widgets: um slide de posts, um post em destaque e lista de colunistas. Estes *widgets* adicionam funcionalidades muito comuns em portais de notícias.
