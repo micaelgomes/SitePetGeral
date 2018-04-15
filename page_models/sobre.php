@@ -81,6 +81,24 @@
         </div>
     </div>
     
+    <p class="light titulos center flow-text"> CLAA – Comitê Local de Acompanhamento e Avaliação </p>
+
+    <p class = "flow-text body-post">
+        <i class="material-icons">done</i>Acompanha e orienta os grupos quanto aos aspectos filosóficos, conceituais e metodológicos do Programa de Educação Tutorial – PET <br>
+    
+        <i class="material-icons">done</i>Coordena e participa ativamente do processo formal de acompanhamento dos grupos sob sua coordenação <br>
+    
+        <i class="material-icons">done</i>Referenda os processos de seleção e desligamento de alunos bolsistas e de tutores <br>
+    
+        <i class="material-icons">done</i>Emitir parecer final acerca do relatório anual dos grupos e encaminhá-lo à SESu  <br>
+    
+        <i class="material-icons">done</i>Organiza dados e informações relativas ao PET e emitir pareceres por solicitação da SESu <br>
+    
+        <i class="material-icons">done</i>Orienta o planejamento e execução de atividades dos grupos <br>
+    
+        <i class="material-icons">done</i>Representa o programa PET na UFMA <br>
+    </p>
+
     <div class="title-post nunito">
         <div class="container">
             <h3> Eventos - PET </h3>
@@ -88,16 +106,15 @@
     </div>
 
     <div class="row">
+        <div class="col l2 xl2">
+            <!-- Suprimindo espaço extra -->
+        </div>
         <!-- cardStart -->
-        <div class="col s12 m6 l4 xl4 body-post">
+        <div class="col s12 m6 l4 xl4">
           <div class="card z-depth-3">
             <div class="card-image">
-              <img src="http://localhost/wordpress/wp-content/uploads/2018/03/pexels-photo-533189.jpeg">
-              <span class="card-title">Computação</span>
-            </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
+              <img src="http://localhost/wordpress/wp-content/uploads/2018/04/sec2.jpg">
+              <span class="card-title black">INTERPET</span>
             </div>
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Descrição do PET</span>
@@ -113,12 +130,8 @@
         <div class="col s12 m6 l4 xl4">
           <div class="card z-depth-3">
             <div class="card-image">
-              <img src="http://localhost/wordpress/wp-content/uploads/2018/03/pexels-photo-533189.jpeg">
-              <span class="card-title">Biologia</span>
-            </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
+              <img src="http://localhost/wordpress/wp-content/uploads/2018/04/sec.jpg">
+              <span class="card-title black">MARAPET</span>
             </div>
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Descrição do PET</span>
@@ -130,6 +143,9 @@
           </div>
         </div>	
         <!-- cardEnd -->
-  </div>
+        <div class="col l2 xl2">
+            <!-- Suprimindo espaço extra -->
+        </div>
+</div>
 
 <?php get_footer(); ?>

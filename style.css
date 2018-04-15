@@ -583,3 +583,9 @@ ul.pagination li a:hover:not(.active) {
     background-color: #18CDCA;
     max-height: 310px;
 }
+
+.ajuste {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
