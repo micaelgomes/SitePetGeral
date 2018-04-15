@@ -7,7 +7,6 @@
  * 
  */
 
-
 if ( ! function_exists( 'materialize_css_setup' ) ) :
 /**
  * Configura os padrões do tema e registra o suporte para vários recursos do WordPress.
@@ -206,4 +205,31 @@ function materialize_controls($wp_customize)
 
 add_action('customize_register', 'materialize_controls');
 
+
+
+/*Busca na tabela wp_post, noticias do tipo post e com status publicado que corresponde a busca do usuário, ordenado por data*/
+function my_query_posts($busca){
+	global $wpdb;
+	$itens = $wpdb->get_results("SELECT post_title, ID, post_content FROM `wp_posts` WHERE `post_status` ='publish' AND `post_type`='post' AND `post_title` LIKE '%$busca%' ORDER BY post_date");
+	
+	/*Se não foi encontrado, retorna falso*/
+	if (empty($itens))
+		return false;
+	//Retorna o vetor de resultados, caso seja encontrado
+	return $itens;
+	
+}
+
+//Busca as categorias do post
+function my_query_categories($id){
+	global $wpdb;
+	$itens = $wpdb->get_results("SELECT wp_terms.name FROM wp_terms, wp_term_relationships,wp_term_taxonomy WHERE wp_term_relationships.object_id ='$id' AND wp_term_relationships.term_taxonomy_id = wp_term_taxonomy.term_taxonomy_id AND wp_terms.term_id = wp_term_taxonomy.term_id");
+	
+	/*Se não foi encontrado, retorna falso*/
+	if (empty($itens))
+		return false;
+	//Retorna o vetor de resultados, caso seja encontrado
+	return $itens;
+
+}
 
