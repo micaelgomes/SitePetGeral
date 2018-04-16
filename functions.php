@@ -203,9 +203,6 @@ function materialize_controls($wp_customize)
 	));
 }
 
-add_action('customize_register', 'materialize_controls');
-
-
 
 /*Busca na tabela wp_post, noticias do tipo post e com status publicado que corresponde a busca do usuário, ordenado por data*/
 function my_query_posts($busca){
@@ -233,3 +230,4 @@ function my_query_categories($id){
 
 }
 
+add_action('customize_register', 'materialize_controls');

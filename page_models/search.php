@@ -2,7 +2,7 @@
 <?php
 /**
  * template de demostração de petianos
- * Template Name: busca
+ * Template Name: search
  *
  * @package SiteGeralPETUFMA
  * @since SiteGeralPETUFMA 0.1
@@ -11,17 +11,7 @@
 ?>
 
 <?php get_header(); ?>
-<?php 
-//Mostra a barra superior de admin, caso o usuario seja adm
-
-$pagename = get_query_var('pagename'); 
-
-
-
-
-//echo "<script>alert('value = ".$string."');</script>";
-
-?> 
+<?php $pagename = get_query_var('pagename'); ?> 
 
 <div class="title-post nunito">
     <div class="container">
@@ -60,7 +50,7 @@ $pagename = get_query_var('pagename');
             if($tag->name!="Sem categoria"){
         ?>
 
-        <div class="chip"> <?php echo $cat->name; ?> <i class="close material-icons">close</i></div>
+        <div class="chip"> <?php echo $cat->name; ?></div>
         
       
 

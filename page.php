@@ -33,9 +33,15 @@
             <?php
                 $categories = get_categories();
                 foreach($categories as $category) {
-                   echo '
-                    <div class="chip border-citacao-post grey darken-2"> <a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></div>
-                   ';
+                    if (strcmp($category->name, "Sem categoria")) {
+                        echo '
+                            <div class="chip border-citacao-post grey darken-2"> <a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></div>
+                        ';
+                    } else {
+                        echo '
+                            <div class="chip border-citacao-post grey darken-2"> <a href="' . get_category_link($category->term_id) . '"> Outros </a></div>
+                        ';
+                    }
                 }
             ?>
             <p class="light titulos flow-text"> Archives </p>
