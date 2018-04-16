@@ -437,6 +437,22 @@ footer.page-footer {
     font-size: 18px;
 }
 
+.body-page {
+    text-align: justify;
+    padding: 1% !important;
+    padding-left: 7% !important;
+    padding-right: 7% !important;
+    font-size: 18px;
+}
+
+.body-side-page {
+    padding-top: 2% !important;
+}
+
+.body-side-archive {
+    padding-left: 7% !important;
+}
+
 .body-filosofia {
     text-align: justify;
     font-size: 17px;
