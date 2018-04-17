@@ -19,3 +19,26 @@ SUMÁRIO:
   - Aba com Estatuto
   - Link para o MARAPET
   - Institucional (INTERPET, CLAA ... )
+
+# (mudanças) SITE PET GERAL :
+## MENU 
+  - Mudar sobre para apresentação 
+
+## INDEX
+  - Mudar barra de pesquisa (outra página; ou reformular)
+  + Notícias com imagens; Atividade
+    
+## ESTATUTO => REGULAMENTAÇÃO
+  + explicações simples com links
+  + mockup (http://portal.mec.gov.br/pet/legislacao)
+
+## GRUPOS PET 
+  + Icone (Logo do grupo em HD)
+  + Nome grupo
+  + Reveral : Filosofia do grupos (informado pelo grupo)
+  - veja mais ; + Projetos
+  + botão 
+
+## PLUGIN
+  + adiconar nova tela com informações do PET
+  + gerar .JSON para compartilhar informações (REST API)
