@@ -32,6 +32,9 @@ SUMÁRIO:
   + explicações simples com links
   + mockup (http://portal.mec.gov.br/pet/legislacao)
 
+## PETIANOS ATIVOS => BOTÂO 
+  - acionar tela por botão
+
 ## GRUPOS PET 
   + Icone (Logo do grupo em HD)
   + Nome grupo

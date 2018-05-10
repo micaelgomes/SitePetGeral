@@ -163,6 +163,11 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="background-section">
+		<h1 class = "nunito black-text center">Contate-nos</h1>
+	</div>
+
 </section>
 	
 <?php get_footer(); ?>
