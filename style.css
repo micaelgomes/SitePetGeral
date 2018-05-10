@@ -629,3 +629,7 @@ ul.pagination li a:hover:not(.active) {
     justify-content:center;
     align-items:center;
 }
+
+.slider-box {
+    padding: 6%;
+}

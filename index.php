@@ -11,21 +11,35 @@
 ?>
 
 <?php get_header(); ?>
-<section>
-	<!-- PARALAX SECTION -->
-    <div class="header-container">
-        <div class="section  no-pad-bot">
-            <div class="container">
-                <div id="search-box">
-                    <form method="post" id="search-form" action= "/wordpress/index.php/busca"/>
-                        <input  name = "search" id="search-text" type="text" placeholder=" Faça uma busca... ">
-                        <button id="search-button">Pesquisar</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="parallax bannerimg"></div>
-    </div>
+<section>	
+		<?php
+			$args = array( 'numberposts' => '3',
+							'orderby' => 'post_date',
+							'order' => 'DESC',
+							'post_type' => 'post',
+							'cat' => 1  
+						);
+			$recent_posts = wp_get_recent_posts( $args );
+			echo '  <div class="carousel carousel-slider center" data-indicators="true">';
+			if($recent_posts){
+				foreach( $recent_posts as $recent ){
+					echo '	<div class="carousel-item bannerimg white-text" href="#" >';
+					echo '		<h1 class = "nunito slider-box">' .$recent["post_title"].'</h1>';
+					echo '  	<div class="center">
+									<a class="btn waves-effect white black-text darken-text-2" href="' . get_permalink($recent["ID"]) . '"> Leia Mais </a>
+								</div>';
+					echo '	</div>';
+					
+				}
+				wp_reset_query();
+				echo '</div>';
+			} else {
+				echo '	<div class="carousel-item bannerimg white-text" href="#" >';
+				echo '		<h1 class = "nunito slider-box">Nada Cadastrado</h1>';
+				echo '	</div>';
+				echo '</div>';
+			}
+		?>
 </section>
 <section>
 	<div class="background-section">
