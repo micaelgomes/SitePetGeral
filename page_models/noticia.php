@@ -16,8 +16,10 @@
             <h3> Notícias </h3>
             <div id="search-box-side">
                 <div id="search-form-side">
-                    <input  id="search-text-side" type="text" placeholder=" Faça uma busca... ">
-                    <button type="submit" id="search-button-side" onclick="">Pesquisar</button>
+                    <form method="post" id="search-form" action= "/wordpress/index.php/busca"/>
+                        <input  name = "search" id="search-text" type="text" placeholder=" Faça uma busca... ">
+                        <button id="search-button">Pesquisar</button>
+                    </form>
                 </div>
             </div>
         </div>
