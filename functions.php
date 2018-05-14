@@ -231,3 +231,4 @@ function my_query_categories($id){
 }
 
 add_action('customize_register', 'materialize_controls');
+

@@ -13,23 +13,34 @@
 <?php get_header(); ?>
 <section>	
 		<?php
-			$args = array( 'numberposts' => '3',
+			$args = array( 'numberposts' => '4',
 							'orderby' => 'post_date',
 							'order' => 'DESC',
 							'post_type' => 'post',
 							'cat' => 1  
 						);
 			$recent_posts = wp_get_recent_posts( $args );
+			$cont = 1;
 			echo '  <div class="carousel carousel-slider center" data-indicators="true">';
 			if($recent_posts){
 				foreach( $recent_posts as $recent ){
-					echo '	<div class="carousel-item bannerimg white-text" href="#" >';
-					echo '		<h1 class = "nunito slider-box">' .$recent["post_title"].'</h1>';
-					echo '  	<div class="center">
-									<a class="btn waves-effect white black-text darken-text-2" href="' . get_permalink($recent["ID"]) . '"> Leia Mais </a>
-								</div>';
-					echo '	</div>';
+					if($cont%2 == 0){
+						echo '	<div class="carousel-item bannerimg-2 white-text" href="#" >';
+						echo '		<h1 class = "nunito slider-box">' .$recent["post_title"].'</h1>';
+						echo '  	<div class="center carousel-fixed-item">
+										<a class="btn waves-effect white black-text darken-text-2" href="' . get_permalink($recent["ID"]) . '"> Leia Mais </a>
+									</div>';
+						echo '	</div>';
+					}else{
+						echo '	<div class="carousel-item bannerimg white-text" href="#" >';
+						echo '		<h1 class = "nunito slider-box">' .$recent["post_title"].'</h1>';
+						echo '  	<div class="carousel-fixed-item center">
+										<a class="btn waves-effect white black-text darken-text-2" href="' . get_permalink($recent["ID"]) . '"> Leia Mais </a>
+									</div>';
+						echo '	</div>';
+					}
 					
+					$cont++;	
 				}
 				wp_reset_query();
 				echo '</div>';
@@ -163,11 +174,6 @@
 			</div>
 		</div>
 	</div>
-
-	<div class="background-section">
-		<h1 class = "nunito black-text center">Contate-nos</h1>
-	</div>
-
 </section>
 	
 <?php get_footer(); ?>
