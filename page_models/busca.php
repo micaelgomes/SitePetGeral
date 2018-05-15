@@ -10,15 +10,21 @@
 ?>
 
 <?php get_header(); ?>
-<?php $pagename = get_query_var('pagename'); ?> 
+<?php $pagename = get_query_var('pagename'); 
+
+
+
+?> 
     
     <div class="title-post nunito">
         <div class="container">
             <h3> Resultados </h3>
             <div id="search-box-side">
                 <div id="search-form-side">
-                    <input  id="search-text-side" type="text" placeholder=" Faça uma busca... ">
+                <form method="post" id="search-form" action= "/wordpress/index.php/busca"/> 
+                    <input  name = "search" id="search-text-side" type="text" placeholder=" Faça uma busca... ">
                     <button type="submit" id="search-button-side" onclick="">Pesquisar</button>
+                </form>
                 </div>
             </div>
         </div>
@@ -31,30 +37,33 @@
         //query
         $posts = my_query_posts($_POST['search']);
     
-        if ( $posts!=false){
+    if ( $posts!=false){
         foreach ($posts as $post){
             
         ?>
 
-        <div class="card-panel card-news">
-            <h4 class="black-text nunito"> <?php echo $post->post_title; ?></h5>
-
-            <div class=" body-post black-text inside-news flow-text truncate">
-                <?php echo $post->post_content; ?>
+        <div class="card-panel card-news nunito">
+            <h5 class="black-text"> <?php echo $post->post_title; ?></h5>
+            <hr />
+            <div class="black-text inside-news"><?php echo $post->post_content; ?>
             </div>
-            <br>
+            <hr />
             <?php 
-                $category = my_query_categories($post->ID);
-                if ( $category!=false){
-                    foreach ($category as $cat){
-                        if($tag->name!="Sem categoria"){
+            $category = my_query_categories($post->ID);
+            if ( $category!=false){
+                foreach ($category as $cat){
+                    if($tag->name!="Sem categoria"){
             ?>
-                            <div class="chip"> <?php echo $cat->name; ?></div>
-            <?php
-                        }
+
+            <div class="chip"> <?php echo $cat->name; ?></div>
+            
+        
+
+        <?php
                     }
                 }
-            ?>
+            }
+        ?>
 
         </div>
 
@@ -63,7 +72,8 @@
     }else{
         ?>
         <div class="card-panel card-news nunito">
-            <h5 class="black-text"> Resultados não foram encontrados! </h5>
+            <h5 class="black-text"> Mano, não foi encontrado! </h5>
+    
         </div>
     <?php
     }
@@ -79,7 +89,7 @@
                 foreach($categories as $category) {
                     if (strcmp($category->name, "Sem categoria")) {
                         echo '
-                            <div class="chip border-citacao-post grey darken-2 truncate"> <a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></div>
+                            <div class="chip border-citacao-post grey darken-2"> <a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></div>
                         ';
                     } else {
                         echo '
@@ -100,3 +110,4 @@
     </div>
 
 <?php get_footer(); ?>
+
