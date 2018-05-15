@@ -641,9 +641,18 @@ ul.pagination li a:hover:not(.active) {
 }
 
 /* layout dos comentários*/
+
+#reply-title {
+    font-family: 'Nunito', sans-serif; 
+}
+
+#email-notes {
+    font-family: 'Nunito', sans-serif; 
+}
+
 #respond { 
-    background: #ececec;
-    padding:0 150px 0 150px;
+    background: #F0F0F1;
+    padding: 5px 300px 5px 300px;
 }
 
 #respond input[type=text], textarea {
@@ -655,6 +664,7 @@ ul.pagination li a:hover:not(.active) {
     padding: 3px 0px 3px 3px;
     margin: 5px 1px 3px 0px;
     border: 1px solid #DDDDDD;
+    background-color: white;
 }
     
     
@@ -662,6 +672,15 @@ ul.pagination li a:hover:not(.active) {
     box-shadow: 0 0 5px rgba(81, 203, 238, 1);
     margin: 5px 1px 3px 0px;
     border: 1px solid rgba(81, 203, 238, 1);
+    background-color: white;
+}
+
+#email:focus {
+    border-color: #FF5349;
+}
+
+#comment {
+    height: 10rem;
 }
 
 #author { 
@@ -673,28 +692,43 @@ ul.pagination li a:hover:not(.active) {
         
 #url  { 
     color: #21759b;
-    font-family: "Luicida Console", "Courier New", "Courier", monospace; 
+    font-family: 'Nunito', sans-serif; 
+}
+
+#url:focus  { 
+    border-color: #FF5349;
 } 
 
 #submit {
-    font-family: Arial;
-    color: #ffffff;
-    font-size: 20px;
-    padding: 10px;
-    text-decoration: none;
-    box-shadow: 0px 1px 3px #666666;
-    -webkit-box-shadow: 0px 1px 3px #666666;
-    -moz-box-shadow: 0px 1px 3px #666666;
-    text-shadow: 1px 1px 3px #666666;
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#006ad4), to(#003366));
-    background: -moz-linear-gradient(top, #006ad4, #003366);
+    position: absolute;
+    height: 45px;
+    width: 18.8%;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    line-height: 42px;
+    border-width: 0;
+    background-color: #FF5349;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 0px;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
 } 
             
 #submit:hover {
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#003366), to(#006ad4));
-    background: -moz-linear-gradient(top, #003366, #006ad4)
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    background-color: #4d90fe;
+    color: white;
+    border: none;
 }
 
 .comment-list {
     padding-left: 25%;
+}
+
+.form-submit {
+    padding-top: 1%;
+    padding-bottom: 5%;
 }
