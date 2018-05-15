@@ -13,7 +13,7 @@
 <?php get_header(); ?>
 <section>	
 		<?php
-			$args = array( 'numberposts' => '4',
+			$args = array( 'numberposts' => '3',
 							'orderby' => 'post_date',
 							'order' => 'DESC',
 							'post_type' => 'post',
@@ -24,23 +24,12 @@
 			echo '  <div class="carousel carousel-slider center" data-indicators="true">';
 			if($recent_posts){
 				foreach( $recent_posts as $recent ){
-					if($cont%2 == 0){
-						echo '	<div class="carousel-item bannerimg-2 white-text" href="#" >';
-						echo '		<h1 class = "nunito slider-box">' .$recent["post_title"].'</h1>';
-						echo '  	<div class="center carousel-fixed-item">
-										<a class="btn waves-effect white black-text darken-text-2" href="' . get_permalink($recent["ID"]) . '"> Leia Mais </a>
-									</div>';
-						echo '	</div>';
-					}else{
-						echo '	<div class="carousel-item bannerimg white-text" href="#" >';
-						echo '		<h1 class = "nunito slider-box">' .$recent["post_title"].'</h1>';
-						echo '  	<div class="carousel-fixed-item center">
-										<a class="btn waves-effect white black-text darken-text-2" href="' . get_permalink($recent["ID"]) . '"> Leia Mais </a>
-									</div>';
-						echo '	</div>';
-					}
-					
-					$cont++;	
+					echo '	<div class="carousel-item bannerimg white-text" href="#" >';
+					echo '		<h1 class = "nunito slider-box">' .strtolower($recent["post_title"]).' <p class = "light titulos center"> por <autor>' . get_the_author_meta('display_name', $recent["ID"]) .'</autor></p></h1>';
+					echo '  	<div class="center carousel-fixed-item">
+									<a class="btn waves-effect white black-text darken-text-2" href="' . get_permalink($recent["ID"]) . '"> Leia Mais </a>
+								</div>';
+					echo '	</div>';
 				}
 				wp_reset_query();
 				echo '</div>';
@@ -59,7 +48,7 @@
 				<div class="row">
 					<!-- BLOCOS -->
 					<div class="col s12 m12 l4 xl4 menus">
-						<a href="http://localhost/wordpress/index.php/noticia/">
+						<a href="http://localhost/wordpress/index.php/busca/">
 							<div class="icon-block areabuttom">
 								<h2 class="center"><i class="material-icons icon-color">flash_on</i></h2>
 								<h5 class="center">Notícias</h5>

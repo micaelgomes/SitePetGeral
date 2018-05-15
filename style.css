@@ -568,7 +568,8 @@ ul.pagination li a:hover:not(.active) {
     margin: -43px;
 		padding: 10%;
 		padding-left: 0 !important;
-    padding-top: 3% !important;
+    padding-top: 5% !important;
+    padding-bottom: 6%;
 }
 
 #search-form-side {

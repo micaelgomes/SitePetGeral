@@ -45,3 +45,7 @@ SUMÁRIO:
 ## PLUGIN
   + adiconar nova tela com informações do PET
   + gerar .JSON para compartilhar informações (REST API)
+
+# IDEIAS 
+  + colocar eventos(comentarios) e forúns como post
+  + cadastra através do PET home (PETeventos - PETópico)
