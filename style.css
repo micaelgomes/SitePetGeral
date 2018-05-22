@@ -725,10 +725,29 @@ ul.pagination li a:hover:not(.active) {
 }
 
 .comment-list {
-    padding-left: 25%;
+    padding-left: 23% !important;
+    padding: 1%;
 }
 
 .form-submit {
     padding-top: 1%;
     padding-bottom: 5%;
+}
+
+/* Mostrar Comentários */
+.title-comments{
+    padding-left: 20.4%;
+}
+
+.reply {
+    padding-bottom: 2%;
+    font-size: 18px;
+}
+
+.comment-metadata {
+    font-size: 12px;
+}
+
+.comment-author {
+    font-size: 18px;
 }
