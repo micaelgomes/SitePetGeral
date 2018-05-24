@@ -64,6 +64,32 @@ function query_pet_home(){
 	return $itens;
 }
 
+//=========================================================
+//consulta todos os petianos
+function query_petianos(){ 
+	global $wpdb;
+	$itens = $wpdb->get_results("SELECT * FROM `wp_custom_equipe` WHERE `grupo_pet`= 0");
+	if (empty($itens)){
+		return array(array());
+	}
+
+	return $itens;
+}
+//adiciona o json com endpoint
+add_action( 'rest_api_init', function () {
+	register_rest_route( 'pethome/v1', '/petianos', array(
+		'methods' => 'GET',
+		'callback' => 'query_petianos',
+	) );
+	register_rest_route( 'pethome/v1', '/grupopet', array(
+		'methods' => 'GET',
+		'callback' => 'query_pet_home',
+	) );
+} );
+
+// ROOT_FOLDER/wp-json/pethome/v1/petianos
+// ROOT_FOLDER/wp-json/pethome/v1/grupopet
+//===========================================================
 
 function pet_home_init(){
 	//Busca informações do grupo pet
