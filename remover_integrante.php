@@ -13,5 +13,5 @@ $id = $_GET['id'];
 delete_user($id);
 
 
-header('Location:/beta/wp-admin/admin.php?page=pet-members');
+header('Location:/wordpress/wp-admin/admin.php?page=pet-members');
 ?>

@@ -104,6 +104,6 @@ $formato = array(
 /*Insere os dados no BD */
 $result = $wpdb->insert( 'wp_custom_equipe', $dados , $formato);
 //Redireciona para a página do plugin no painel do admin
-header('Location:/beta/wp-admin/admin.php?page=pet-members');
+header('Location:/wordpress/wp-admin/admin.php?page=pet-members');
 
 ?>

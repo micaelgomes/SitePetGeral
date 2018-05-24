@@ -24,7 +24,7 @@ function add_init(){
 
 	<div class="wrap">
 		<!-- Não esquecer de modificar o link da action('Pet members foi provisorio')-->
-		<form name= "signup" method= "post" enctype="multipart/form-data" action= "/beta/wp-content/plugins/pet-home/CadastroPetiano/cadastrando.php?page=test-plugin" >
+		<form name= "signup" method= "post" enctype="multipart/form-data" action= "/wordpress/wp-content/plugins/pet-home/CadastroPetiano/cadastrando.php?page=test-plugin" >
 			<?php
 			labels_add();
 			?>
