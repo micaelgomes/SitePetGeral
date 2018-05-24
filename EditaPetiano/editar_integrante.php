@@ -45,7 +45,7 @@ function edit_int(){
 
 		<div class="wrap">	
 			
-			<form name= "signup" method= "post" enctype="multipart/form-data" action= "/wordpress/wp-content/plugins/pet-home/EditaPetiano/editando.php?id=<?php echo $id ?>" >
+			<form name= "signup" method= "post" enctype="multipart/form-data" action= "/beta/wp-content/plugins/pet-home/EditaPetiano/editando.php?id=<?php echo $id ?>" >
 				<?php
 				labels_edit($p);
 				?>
@@ -59,7 +59,7 @@ function edit_int(){
 		}
 	}else{
 		//Redireciona para a página do plugin no painel do admin caso ocorra algum erro
-		header('Location:/wordpress/wp-admin/admin.php?page=pet-members');
+		header('Location:/beta/wp-admin/admin.php?page=pet-members');
 	}
 }
 

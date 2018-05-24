@@ -105,7 +105,7 @@ $formato = array(
 /*Atualiza os dados no BD */
 $result = $wpdb->update( 'wp_custom_equipe', $dados , array('id'=> $id), $formato);
 //Redireciona para a página do plugin no painel do admin
-header('Location:/wordpress/wp-admin/admin.php?page=pet-members');
+header('Location:/beta/wp-admin/admin.php?page=pet-members');
 
 
 ?>

@@ -108,7 +108,7 @@ function pet_home_init(){
  
 		<div class="wrap">	
 			
-			<form name= "signup" method= "post" enctype="multipart/form-data" action= "/wordpress/wp-content/plugins/pet-home/atualiza_pethome.php" >
+			<form name= "signup" method= "post" enctype="multipart/form-data" action= "/beta/wp-content/plugins/pet-home/atualiza_pethome.php" >
 			<?php
 				labels_home($g);
 			?>

@@ -112,7 +112,7 @@ if($result!=1)
 
 
 //Redireciona para a página do plugin no painel do admin
-header('Location:/wordpress/wp-admin/admin.php?page=pet-home');
+header('Location:/beta/wp-admin/admin.php?page=pet-home');
 
 
 ?>
