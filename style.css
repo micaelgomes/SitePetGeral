@@ -1,6 +1,6 @@
 /*
 Theme Name: SiteGeralPETUFMA
-Theme URI: 
+Theme URI:
 Author: Pet de Computação
 Author URI: petcompufma2015@gmail.com
 Description: Theme on Material Google Design, powered by Materialize framework.
@@ -100,15 +100,15 @@ p {
      max-width: 70%;
      padding-top: 10%;
   }
-	
+
 	.new-icon img {
 		width: auto;
 		height: auto;
 		max-width: 200px;
 		padding-top: 5px;
-		
+
     }
-    
+
     #search-box{
         padding: 10% !important;
         padding-top: 25% !important;
@@ -119,32 +119,32 @@ p {
 }
 
 @media only screen and (max-width : 485px) {
-   
+
       #search-box{
           padding: 10% !important;
           padding-top: 30% !important;
           padding-bottom: 35% !important;
           margin: -15px !important;
       }
-  
+
       #search-box input[type="text"]{
           width: 69.2% !important;
       }
-  
+
       #search-button {
         width: 29.8% !important;
         font-size: 10px !important;
-      }  
+      }
   }
 
 @media only screen and (max-width : 1100px) {
 	.new-icon img{
-		
+
 		width: auto;
 		height: auto;
 		max-width: 200px !important;
 		padding-top: 7px !important;
-		
+
     }
 }
 
@@ -156,12 +156,12 @@ p {
 
 @media only screen and (max-width : 400px) {
 	.new-icon img{
-		
+
 		width: auto;
 		height: auto;
 		max-width: 100px !important;
 		padding-top: 17px !important;
-		
+
 	}
 }
 
@@ -196,7 +196,7 @@ footer.page-footer {
     padding-left: 0px;
     padding-right: 0px;
     border-radius: 10px;
-    
+
     -webkit-transition-duration: 0.2s;
     transition-duration: 0.2s;
     background-color: white;
@@ -227,15 +227,16 @@ footer.page-footer {
     -o-filter: blur(5px);
     -ms-filter: blur(5px);
     filter: blur(5px);
-    
+
     object-fit: contain;
 }
 
 #search-box{
     position: relative;
-    width: 100%;
+    width: 94%;
     margin: -43px;
-		padding: 20%;
+	padding: 20%;
+    padding-top: 16% !important;
 }
 
 #search-form{
@@ -264,7 +265,7 @@ footer.page-footer {
 }
 
 #search-button {
-    
+
     position: absolute;
     height: 45px;
     width: 18.8%;
@@ -286,14 +287,14 @@ footer.page-footer {
     -webkit-transition-duration: 0.2s;
     transition-duration: 0.2s;
     background-color: #4d90fe;
-    
+
     color: white;
     border: none;
 }
 
 .searchicon{
     position: sticky;
-    
+
 }
 
 .bannerimg{
@@ -315,6 +316,12 @@ footer.page-footer {
     padding-top: 1%;
     padding-bottom: 1%;
     padding-left: 4.5%;
+}
+
+.background-section-sobre-404 {
+    background-color: #F0F0F1;
+    padding-top: 2%;
+    padding-bottom: 1%;
 }
 
 .border-section {
@@ -371,8 +378,8 @@ footer.page-footer {
 /* selected link */
 .border-citacao-post a:active {
     color: #292C44;
-} 
-    
+}
+
 
 .icon-color{
     color: #000;
@@ -389,6 +396,11 @@ footer.page-footer {
     padding-bottom: 3%;
     padding-left: 7% !important;
     padding-right: 5% !important;
+}
+
+.container-404 {
+    padding: 4%;
+    padding-top: 1% !important;
 }
 
 .title-petianos {
@@ -414,8 +426,8 @@ footer.page-footer {
 .sidebar-petianos p {
     padding-top: 3%;
     padding-right: 5% !important;
-    font-size: 16px !important;   
-    text-align: justify;  
+    font-size: 16px !important;
+    text-align: justify;
 }
 
 @media only screen and ( max-width : 500px ) {
@@ -440,6 +452,14 @@ footer.page-footer {
     padding-top: 1%;
     padding-bottom: 1%;
     padding-left: 4.5%;
+    font-size: 36px;
+    color: #FFF;
+    background-color: #18CDCA;
+}
+
+.title-post-404 {
+    padding-top: 5%;
+    padding-bottom: 5%;
     font-size: 36px;
     color: #FFF;
     background-color: #18CDCA;
@@ -475,7 +495,7 @@ footer.page-footer {
     padding: 1% !important;
     padding-left: 7% !important;
     padding-right: 7% !important;
-    font-size: 18px;   
+    font-size: 18px;
 }
 
 .body-side-archive {
@@ -598,7 +618,7 @@ ul.pagination li a:hover:not(.active) {
 }
 
 #search-button-side {
-    
+
     position: absolute;
     height: 45px;
     width: 18.8%;
@@ -620,7 +640,7 @@ ul.pagination li a:hover:not(.active) {
     -webkit-transition-duration: 0.2s;
     transition-duration: 0.2s;
     background-color: #4d90fe;
-    
+
     color: white;
     border: none;
 }
@@ -643,14 +663,14 @@ ul.pagination li a:hover:not(.active) {
 /* layout dos comentários*/
 
 #reply-title {
-    font-family: 'Nunito', sans-serif; 
+    font-family: 'Nunito', sans-serif;
 }
 
 #email-notes {
-    font-family: 'Nunito', sans-serif; 
+    font-family: 'Nunito', sans-serif;
 }
 
-#respond { 
+#respond {
     background: #F0F0F1;
     padding: 5px 300px 5px 300px;
 }
@@ -666,8 +686,8 @@ ul.pagination li a:hover:not(.active) {
     border: 1px solid #DDDDDD;
     background-color: white;
 }
-    
-    
+
+
 #respond input[type=text]:focus, textarea:focus {
     box-shadow: 0 0 5px rgba(81, 203, 238, 1);
     margin: 5px 1px 3px 0px;
@@ -683,21 +703,21 @@ ul.pagination li a:hover:not(.active) {
     height: 10rem;
 }
 
-#author { 
+#author {
     font-family: Lobster, "Lobster 1.4", "Droid Sans", Arial;
     font-size: 16px;
-    color:#1d1d1d; 
+    color:#1d1d1d;
     letter-spacing:.1em;
-} 
-        
-#url  { 
-    color: #21759b;
-    font-family: 'Nunito', sans-serif; 
 }
 
-#url:focus  { 
+#url  {
+    color: #21759b;
+    font-family: 'Nunito', sans-serif;
+}
+
+#url:focus  {
     border-color: #FF5349;
-} 
+}
 
 #submit {
     position: absolute;
@@ -714,8 +734,8 @@ ul.pagination li a:hover:not(.active) {
     -moz-border-radius: 5px 5px 5px 0px;
     border-radius: 5px 5px 5px 5px;
     cursor: pointer;
-} 
-            
+}
+
 #submit:hover {
     -webkit-transition-duration: 0.2s;
     transition-duration: 0.2s;
