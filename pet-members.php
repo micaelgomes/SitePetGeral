@@ -48,13 +48,14 @@ function show_classification($peopleclass, $title){
 	      	  </thead>';
 
 		foreach ($members as $member){
+			$url_remove = "remover_integrante.php?id=".$member->id;
 			echo '
 			<tbody>
 		    	<tr>
 		    		<th scope="row">-></th>
 		      		<td>'.$member->nome.'</td>
 		     		<td><a href="admin.php?page=edit_member&id='.$member->id.'" ><button type="button" class="btn btn-success">Editar</button></td>
-		      		<td><a href="/wordpress/wp-content/plugins/pet-home/remover_integrante.php?id='.$member->id.'" ><button type="button" class="btn btn-danger">Remover</button></td>
+		      		<td><a href="'.plugins_url($url, __FILE__).'" ><button type="button" class="btn btn-danger">Remover</button></td>
 		    	</tr>
 		  	</tbody>' ;	
 		}

@@ -61,6 +61,11 @@ function guarda_imagem(){
 	return '';
 }
 
+function secureStr($str){
+   	$str = preg_replace("/[;'`()\"%=*><]/", "", $str);
+   	return $str;
+}
+
 $encontrado = $_GET['encontrado'];
 $dirImg = guarda_imagem();
 
@@ -71,19 +76,19 @@ if ($dirImg!=''){
 
 /*Insere os dados no BD*/
 $dados = array(
-	'nome'=>$_POST['nome'],
-	'email'=>$_POST['email'],
+	'nome'=>secureStr($_POST['nome']),
+	'email'=>secureStr($_POST['email']),
 	'funcao'=>'',
 	'classificacao'=>'',
 	'bio'=>'',
 	'interesse'=>'',
 	'lattes'=>'',
 	'imagem'=> $dirImg,
-	'facebook'=>$_POST['facebook'],
-	'twitter'=>$_POST['twitter'],
+	'facebook'=>secureStr($_POST['facebook']),
+	'twitter'=>secureStr($_POST['twitter']),
 	'web'=>$_POST['web'],
-	'filosofia' =>$_POST['filosofia'],
-	'projetos' => $_POST['projetos'],
+	'filosofia' =>secureStr($_POST['filosofia']),
+	'projetos' => secureStr($_POST['projetos']),
 	'grupo_pet' => 1,
 );
 $formato = array(
@@ -113,6 +118,7 @@ if($result!=1)
 
 //Redireciona para a página do plugin no painel do admin
 header('Location:/wordpress/wp-admin/admin.php?page=pet-home');
+
 
 
 ?>

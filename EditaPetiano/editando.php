@@ -33,6 +33,11 @@ function verifica_diretorios(){
 	return $diretorio;
 }
 
+function secureStr($str){
+   	$str = preg_replace("/[;'`()\"%=*><]/", "", $str);
+   	return $str;
+}
+
 /*Faz a verificação da imagem*/
 function guarda_imagem(){
 
@@ -70,17 +75,17 @@ if ($dirImg!=''){
 
 /*Insere os dados no BD*/
 $dados = array(
-	'nome'=>$_POST['nome'],
-	'email'=>$_POST['email'],
-	'funcao'=>$_POST['funcao'],
-	'classificacao'=>$_POST['classificacao'],
-	'bio'=>$_POST['bio'],
-	'interesse'=>$_POST['interesse'],
-	'lattes'=>$_POST['lattes'],
+	'nome'=>secureStr($_POST['nome']),
+	'email'=>secureStr($_POST['email']),
+	'funcao'=>secureStr($_POST['funcao']),
+	'classificacao'=>secureStr($_POST['classificacao']),
+	'bio'=>secureStr($_POST['bio']),
+	'interesse'=>secureStr($_POST['interesse']),
+	'lattes'=>secureStr($_POST['lattes']),
 	'imagem'=> $dirImg,
-	'facebook'=>$_POST['facebook'],
-	'twitter'=>$_POST['twitter'],
-	'web'=>$_POST['web'],
+	'facebook'=>secureStr($_POST['facebook']),
+	'twitter'=>secureStr($_POST['twitter']),
+	'web'=>secureStr($_POST['web']),
 	'filosofia' =>'',
 	'projetos' => '',
 	'grupo_pet' => 0,

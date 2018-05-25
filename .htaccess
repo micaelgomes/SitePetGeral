@@ -1,0 +1,4 @@
+# Only allow direct access to specific Web-available files.
+
+
+Options All -Indexes

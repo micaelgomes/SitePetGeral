@@ -45,7 +45,7 @@ function edit_int(){
 
 		<div class="wrap">	
 			
-			<form name= "signup" method= "post" enctype="multipart/form-data" action= "/wordpress/wp-content/plugins/pet-home/EditaPetiano/editando.php?id=<?php echo $id ?>" >
+			<form name= "signup" method= "post" enctype="multipart/form-data" action= "<?php echo plugins_url('editando.php?id='.$id,__FILE__); ?>" >
 				<?php
 				labels_edit($p);
 				?>
