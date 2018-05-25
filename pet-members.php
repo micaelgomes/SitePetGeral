@@ -55,7 +55,7 @@ function show_classification($peopleclass, $title){
 		    		<th scope="row">-></th>
 		      		<td>'.$member->nome.'</td>
 		     		<td><a href="admin.php?page=edit_member&id='.$member->id.'" ><button type="button" class="btn btn-success">Editar</button></td>
-		      		<td><a href="'.plugins_url($url, __FILE__).'" ><button type="button" class="btn btn-danger">Remover</button></td>
+		      		<td><a href="'.plugins_url($url_remove, __FILE__).'" ><button type="button" class="btn btn-danger">Remover</button></td>
 		    	</tr>
 		  	</tbody>' ;	
 		}
