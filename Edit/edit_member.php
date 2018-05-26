@@ -45,7 +45,7 @@ function edit_int(){
 
 		<div class="wrap">	
 			
-			<form name= "signup" method= "post" enctype="multipart/form-data" action= "<?php echo plugins_url('editando.php?id='.$id,__FILE__); ?>" >
+			<form name= "signup" method= "post" enctype="multipart/form-data" action= "<?php echo plugins_url('edit_member_db.php?id='.$id,__FILE__); ?>" >
 				<?php
 				labels_edit($p);
 				?>

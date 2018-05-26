@@ -24,7 +24,7 @@ function add_init(){
 
 	<div class="wrap">
 		<!-- Não esquecer de modificar o link da action('Pet members foi provisorio')-->
-		<form name= "signup" method= "post" enctype="multipart/form-data" action= "<?php echo plugins_url('cadastrando.php',__FILE__); ?>" >
+		<form name= "signup" method= "post" enctype="multipart/form-data" action= "<?php echo plugins_url('add_member_db.php',__FILE__); ?>" >
 			<?php
 			labels_add();
 			?>

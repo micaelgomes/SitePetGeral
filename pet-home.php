@@ -2,7 +2,7 @@
 /*
 	Plugin name: PET Home
 	Plugin URI:
-	Description: Esse plugin cadastra membros e ex-membros do Programa de Educação Tutorial
+	Description: Esse plugin gerencia o grupo Programa de Educação Tutorial
 	Version: 1.0
 	Author: Mr. Anderson Fonseca, Gabriel Phelipe, Eduardo Roger, Micael Gomes e Antônio Moreira
 	License: GPLv2 or later
@@ -12,7 +12,9 @@
 defined( 'ABSPATH' ) or die( 'Nope, not accessing this' );
 add_action('admin_menu', 'pet_home_plugin_setup_menu');
 include('pet-members.php');
+include('plugin_functions.php');
 create_plugin_database_table();
+
 /*Se a tabela não existe, então ela é criada*/
 function create_plugin_database_table(){
 	global $wpdb;
@@ -45,7 +47,7 @@ function create_plugin_database_table(){
 		dbDelta($sql);
 	}
 }
-
+/*Inclui o plugin a página de menu*/
 function pet_home_plugin_setup_menu(){
 
     add_menu_page( 'PET Home Plugin Page', 'PET home', 'manage_options', 'pet-home', 'pet_home_init','dashicons-groups');
@@ -94,7 +96,7 @@ add_action( 'rest_api_init', function () {
 function pet_home_init(){
 	//Busca informações do grupo pet
 	$grupo = query_pet_home();
-
+	
 	foreach ($grupo as $g) {
 		
 ?>
@@ -108,7 +110,7 @@ function pet_home_init(){
  
 		<div class="wrap">	
 			
-			<form name= "signup" method= "post" enctype="multipart/form-data" action= "<?php echo plugins_url('atualiza_pethome.php',__FILE__);?>">
+			<form name= "signup" method= "post" enctype="multipart/form-data" action= "<?php echo plugins_url('update_pet-home_db.php',__FILE__);?>">
 			<?php
 				labels_home($g);
 			?>

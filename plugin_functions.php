@@ -1,9 +1,10 @@
-
 <?php
-include('../bd_config.php');
-$path = preg_replace('/wp-content.*$/','',__DIR__);
-include($path.'wp-load.php');
-global $wpdb;
+
+//Função para impedir injeção de SQL
+function secureStr($str){
+   	$str = preg_replace("/[;'`()\"%=*><]/", "", $str);
+   	return $str;
+}
 
 /*Verifica a extensão*/
 function extensao_permitida($nome){
@@ -22,7 +23,7 @@ function extensao_permitida($nome){
 function verifica_diretorios(){
 	chdir('../../../');
 	//Cada imagem colocada no diretorio de uploads é salva em uma pasta de acordo com o mes e ano em que foi feito o upload
-	$diretorio = 'uploads/sites/1/'.date('Y').'/'.date('m');
+	$diretorio = 'uploads/sites/1/'.date('Y').'/'.date('m').'/';
 	if(!is_dir($diretorio)){
 		//Cria uma pasta dentro da outra (que pode ou não ser nova) - Criação Recursiva
 		mkdir($diretorio,  0777, true);
@@ -48,7 +49,7 @@ function guarda_imagem(){
 			if($_FILES['img_petiano']['size'] < 2000000 || $_FILES['img_petiano']['size'] == 0){		
 				//Tamanho aceito
 				$dirImg = $diretorio_upload.'/'.$_FILES['img_petiano']['name'];
-				//Faz o upload da imagem no diretorio
+				//Fa o upload da imagem no diretorio
 				if(@move_uploaded_file($_FILES['img_petiano']['tmp_name'], $dirImg)){
 					return $dirImg;
 				}
@@ -59,49 +60,5 @@ function guarda_imagem(){
 	return '';
 }
 
-
-$dirImg = guarda_imagem();
-echo $dirImg;
-if ($dirImg!=''){
-	//é feito uma concatenação com do diretorio da imagem com o wp-contents
-	$dirImg = content_url().'/'.$dirImg;
-}
-
-/*Insere os dados no BD*/
-$dados = array(
-	'nome'=>$_POST['nome'],
-	'email'=>$_POST['email'],
-	'funcao'=>'',
-	'classificacao'=>'',
-	'bio'=>'',
-	'interesse'=>'',
-	'lattes'=>'',
-	'imagem'=> $dirImg,
-	'facebook'=>$_POST['facebook'],
-	'twitter'=>$_POST['twitter'],
-	'web'=>$_POST['web'],
-	'filosofia' =>$_POST['filosofia'],
-	'projetos' => $_POST['projetos'],
-);
-$formato = array(
-	'%s',
-	'%s',
-	'%s',
-	'%s',
-	'%s',
-	'%s',
-	'%s',
-	'%s',
-	'%s',
-	'%s',
-	'%s',
-	'%s',
-	'%s',
-);
-
-/*Insere os dados no BD */
-$result = $wpdb->insert( 'wp_custom_equipe', $dados , $formato);
-//Redireciona para a página do plugin no painel do admin
-header('Location:/wordpress/wp-admin/admin.php?page=pet-home');
 
 ?>

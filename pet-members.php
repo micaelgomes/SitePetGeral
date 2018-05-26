@@ -1,17 +1,9 @@
 <?php
-/*
-	Plugin name: PET Members
-	Plugin URI:
-	Description: Esse plugin cadastra membros e ex-membros do Programa de Educação Tutorial
-	Version: 1.0
-	Author: Mr. Anderson Fonseca, Gabriel Phelipe, Eduardo Roger e Micael Gomes 
-	License: GPLv2 or later
-*/
 
 
 defined( 'ABSPATH' ) or die( 'Nope, not accessing this' );
-include('CadastroPetiano/adicionar_integrante.php');
-include('EditaPetiano/editar_integrante.php');
+include('Add/add_member.php');
+include('Edit/edit_member.php');
 
 
 
@@ -48,7 +40,7 @@ function show_classification($peopleclass, $title){
 	      	  </thead>';
 
 		foreach ($members as $member){
-			$url_remove = "remover_integrante.php?id=".$member->id;
+			$url_remove = "remove_member.php?id=".$member->id;
 			echo '
 			<tbody>
 		    	<tr>
