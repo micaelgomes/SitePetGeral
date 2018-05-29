@@ -147,13 +147,13 @@ function labels_home($p){
 	<th scope="row"><label for="projetos">Projetos</label></th>
 	<td><input required="required" name="projetos" type="text" id="projetos" class="regular-text" value = "<?php echo $p->projetos ?>"/></td>
 	</tr>
-
+	<!--
 	<tr>
 	<th scope="row"><label for="lattes">Logo (Formatos aceitos: *.jpg, *.jpeg, *.png - Tamanho máximo: 2mb):</label></th>
 	<td><input type="hidden" name="MAX_FILE_SIZE" value="2000000" />
 		        <input name="img_petiano" type="file" accept="image/*" />
 	</tr>
-
+	-->
 	<tr>
 	<th scope="row"><label for="facebook">Facebook</label></th>
 	<td><input name="facebook" type="text" id="facebook" class="regular-text" value = "<?php echo $p->facebook ?>"  /></td>

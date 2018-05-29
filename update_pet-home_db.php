@@ -16,6 +16,8 @@ if ($dirImg!=''){
 	//é feito uma concatenação com do diretorio da imagem com o wp-contents
 	$dirImg = content_url().'/'.$dirImg;
 }
+echo "<script>alert('".$dirImg."');</script>";
+
 
 /*Insere os dados no BD*/
 $dados = array(
