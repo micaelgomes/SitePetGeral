@@ -151,7 +151,12 @@ function labels_home($p){
 	<tr>
 	<th scope="row"><label for="lattes">Logo (Formatos aceitos: *.jpg, *.jpeg, *.png - Tamanho máximo: 2mb):</label></th>
 	<td><input type="hidden" name="MAX_FILE_SIZE" value="2000000" />
-		        <input name="img_petiano" type="file" accept="image/*" />
+		        <input name="img_petiano" type="file" accept="image/*"/>
+		        <br>
+	<?php if ($p->imagem!='') { ?>
+	<div class="middle aligned content"><a href="<?= $p->imagem?>" target="_blank">Logo atual
+        </a></div>
+    <?php } ?>
 	</tr>
 	
 	<tr>

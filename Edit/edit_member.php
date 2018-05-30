@@ -110,6 +110,10 @@ function labels_edit($p){
 	<th scope="row"><label for="lattes">Imagem (Formatos aceitos: *.jpg, *.jpeg, *.png - Tamanho máximo: 2mb):</label></th>
 	<td><input type="hidden" name="MAX_FILE_SIZE" value="2000000" />
 		        <input name="img_petiano" type="file" accept="image/*" />
+	<?php if ($p->imagem!='') { ?>
+	<div class="middle aligned content"><a href="<?= $p->imagem?>" target="_blank">Imagem atual
+        </a></div>
+    <?php } ?>
 	</tr>
 
 	<tr>

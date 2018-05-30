@@ -7,10 +7,23 @@ $path = preg_replace('/wp-content.*$/','',__DIR__);
 include($path.'wp-load.php');
 global $wpdb;
 
+function verifica_imagem_no_bd($id){
+	global $wpdb;
+	$result = $wpdb->get_results("SELECT * FROM `wp_custom_equipe` WHERE `id`= '$id'");
+	if (!empty($result)){
+		return $result[0];
+	}
+	return 0;
+}
 
 $dirImg = guarda_imagem('pet_member');
+$result = verifica_imagem_no_bd($id);
 
-if ($dirImg!=''){
+//O administrador não colocou nova logo e no bd já existe logo cadastrada
+if ($dirImg=='' && $result!=0){
+	$dirImg = $result->imagem;
+//O administrador colocou nova logo, então, deve-se sobrescrever
+}else if($dirImg!=''){
 	//é feito uma concatenação com do diretorio da imagem com o wp-contents
 	$dirImg = content_url().'/'.$dirImg;
 }
@@ -49,8 +62,11 @@ $formato = array(
 	'%d',
 );
 
-/*Atualiza os dados no BD */
-$result = $wpdb->update( 'wp_custom_equipe', $dados , array('id'=> $id), $formato);
+
+if($result!=0){
+	/*Atualiza os dados no BD */
+	$result = $wpdb->update( 'wp_custom_equipe', $dados , array('id'=> $id), $formato);
+} 
 
 //Redireciona para a página pet-members do plugin no painel do admin
 wp_redirect(admin_url('admin.php?page=pet-members'));
