@@ -10,10 +10,15 @@ function delete_user($id){
 	$wpdb->delete( $table, array( 'id' => $id), array('%d'));
 }
 
-$id = $_GET['id'];
-delete_user($id);
+$user = wp_get_current_user();
+$allowed_roles = array('editor', 'administrator');
 
-//Redireciona para a página pet-members do plugin no painel do admin
-wp_redirect(admin_url('admin.php?page=pet-members'));
-
+if(array_intersect($allowed_roles, $user->roles )){
+	$id = $_GET['id'];
+	delete_user($id);
+	//Redireciona para a página pet-members do plugin no painel do admin
+	wp_redirect(admin_url('admin.php?page=pet-members'));
+}else{
+	wp_redirect(get_site_url());
+}
 ?>
