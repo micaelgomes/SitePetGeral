@@ -20,8 +20,13 @@ function extensao_permitida($nome){
 		return false;
 }
 /*Se os diretorios necessários para guardar a imagem não existirem, serão criados*/
-function verifica_diretorios(){
-	chdir('../../../');
+function verifica_diretorios($origem){
+	if($origem=='pet_member'){
+		chdir('../../../');
+	}else{
+		chdir('../../');
+	}
+	
 	//Cada imagem colocada no diretorio de uploads é salva em uma pasta de acordo com o mes e ano em que foi feito o upload
 	$diretorio = 'uploads/sites/1/'.date('Y').'/'.date('m').'/';
 	if(!is_dir($diretorio)){
@@ -33,12 +38,12 @@ function verifica_diretorios(){
 }
 
 /*Faz a verificação da imagem*/
-function guarda_imagem(){
+function guarda_imagem($origem){
 
     /*A imagem ficará guardada no diretório wp_contents/uploads/sites/1/'ano'/'mes'/
 	Então, é necessário que se verifique a existência das pastas, se não, serão criadas
     */
-   	$diretorio_upload = verifica_diretorios();
+   	$diretorio_upload = verifica_diretorios($origem);
  
 	//Pode fazer o upload da imagem
 	if($_FILES['img_petiano']['error'] == 0){

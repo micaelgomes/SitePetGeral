@@ -7,7 +7,7 @@ include($path.'wp-load.php');
 global $wpdb;
 
 
-$dirImg = guarda_imagem();
+$dirImg = guarda_imagem('pet_member');
 echo $dirImg;
 if ($dirImg!=''){
 	//é feito uma concatenação com do diretorio da imagem com o wp-contents

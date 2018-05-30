@@ -10,7 +10,7 @@ global $wpdb;
 
 
 $encontrado = $_GET['encontrado'];
-$dirImg = guarda_imagem();
+$dirImg = guarda_imagem('pet_home');
 
 if ($dirImg!=''){
 	//é feito uma concatenação com do diretorio da imagem com o wp-contents
