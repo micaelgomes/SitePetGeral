@@ -230,5 +230,27 @@ function my_query_categories($id){
 
 }
 
+//Consulta as informações do grupo pet
+function query_pet_home_theme(){ 
+	global $wpdb;
+	$itens = $wpdb->get_results("SELECT * FROM `wp_custom_equipe` WHERE `grupo_pet`= 1");
+	if (empty($itens)){
+		return array(array());
+	}
+
+	return $itens;
+}
+
+//=========================================================
+//consulta todos os petianos
+function query_petianos_theme(){ 
+	global $wpdb;
+	$itens = $wpdb->get_results("SELECT * FROM `wp_custom_equipe` WHERE `grupo_pet`= 0 AND `classificacao` = 'Petianos'");
+	if (empty($itens)){
+		return array(array());
+	}
+
+	return $itens;
+}
 add_action('customize_register', 'materialize_controls');
 
