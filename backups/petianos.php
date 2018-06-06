@@ -1,7 +1,6 @@
 <?php
 /**
- * template de demostração dos Grupos PET
- * Template Name: Petianos
+ * 
  *
  * @package SiteGeralPETUFMA
  * @since SiteGeralPETUFMA 0.1
@@ -10,6 +9,29 @@
 ?>
 
 <?php get_header(); ?>
+
+<?php
+	function rest_api_php_object($http_request){
+		// faz o request do link
+		$response = wp_remote_get( $http_request );
+		// analisa se há erros
+		if( is_wp_error( $response ) ) {
+			return;
+		}
+		// transforma o json em objeto php
+		$petianos = json_decode( wp_remote_retrieve_body( $response ) );
+		return $petianos;
+	}
+	// passa o link da api como parâmetro
+	$petianos = rest_api_php_object("http://localhost/wordpress/wp-json/pethome/v1/petianos");
+	// EXEMPLO
+	
+	foreach( $petianos as $petiano ){
+		echo $petiano->nome;
+	}
+
+?>
+
 
 	<div class="title-post nunito">
         <div class="container">

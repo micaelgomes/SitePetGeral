@@ -42,8 +42,7 @@
 					<span class="card-title"> <?php echo $g->nome; ?> </span>
 				</div>
 				<div class="card-content">
-					<p>I am a very simple card. I am good at containing small bits of information.
-					I am convenient because I require little markup to use effectively.</p>
+					<p><?php echo $g->filosofia; ?></p>
 				</div>
 				<div class="card-reveal">
 					<span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Petianos</span>
