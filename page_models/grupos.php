@@ -8,11 +8,11 @@
  *
  */
 ?>
-<?php 
+<?php
 
 	$grupo = query_pet_home_theme();
 	$petianos = query_petianos_theme();
-	get_header(); 
+	get_header();
 
 
 
@@ -25,12 +25,12 @@
     </div>
   </div>
 
-  <br />  
+  <br />
 
   <div class="row">
-  
-  		<?php 
-  		foreach ($grupo as $g) {										
+
+  		<?php
+  		foreach ($grupo as $g) {
 		?>
 
 		<!-- cardStart -->
@@ -39,7 +39,7 @@
 				<div class="card-image">
 
 					<img src="<?php echo $g->imagem; ?>">
-					<span class="card-title"> <?php echo $g->nome; ?> </span>
+					<span class="card-title blue"> <?php echo $g->nome; ?> </span>
 				</div>
 				<div class="card-content">
 					<p><?php echo $g->filosofia; ?></p>
@@ -55,7 +55,7 @@
 						<li class="collection-item avatar">
 						<img src="<?php echo $p->imagem; ?>" alt="" class="circle">
 						<span class="title"> <?php echo $p->nome; ?> </span>
-						
+
 						<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
 						</li>
 					</ul>
@@ -69,7 +69,7 @@
 					<a class="waves-effect waves-light btn button-color-grupo activator"><i class="material-icons right"></i>Integrantes</a>
 				</div>
 			</div>
-		</div>	
+		</div>
 		<!-- cardEnd -->
 
 		<?php
@@ -77,5 +77,5 @@
 		?>
 
   </div>
-  
+
 <?php get_footer(); ?>
