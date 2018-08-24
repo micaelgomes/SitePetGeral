@@ -14,7 +14,8 @@
 	$petianos = query_petianos_theme();
 	get_header();
 
-
+	//$URL = 'https://pet.ufma.br/' ;
+	$URL = 'http://localhost/wordpress/';
 
 ?>
 

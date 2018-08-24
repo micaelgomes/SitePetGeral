@@ -12,8 +12,8 @@
 ?>
 
 <?php get_header(); ?>
-<?php $URL = 'https://pet.ufma.br/' ?>
-<?php //$URL = 'http://localhost/wordpress/' ?>
+<?php //$URL = 'https://pet.ufma.br/' ?>
+<?php $URL = 'http://localhost/wordpress/' ?>
 
 <section>
 	<div class="parallax-container">
