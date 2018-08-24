@@ -8,6 +8,7 @@
  * Learn more: {@link https://github.com/micaelgoms/SitePetGeral.wiki.git}
  *
  */
+
 ?>
 
 <?php get_header(); ?>
