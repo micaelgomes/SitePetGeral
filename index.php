@@ -27,7 +27,7 @@
 			if($recent_posts){
 				foreach( $recent_posts as $recent ){
 					echo '	<div class="carousel-item bannerimg white-text" href="#" >';
-					echo '		<h1 class = "nunito slider-box">' .strtolower($recent["post_title"]).' <p class = "light titulos center"> por <autor>' . get_the_author_meta('display_name', $recent["ID"]) .'</autor></p></h1>';
+					echo '		<h1 class = "nunito slider-box">' .strtolower($recent["post_title"]).' <p class = "light titulos center">'; //por <autor>' . get_the_author_meta('display_name', $recent["ID"]) .'</autor></p></h1>';
 					echo '  	<div class="center carousel-fixed-item">
 									<a class="btn waves-effect white black-text darken-text-2" href="' . get_permalink($recent["ID"]) . '"> Leia Mais </a>
 								</div>';
@@ -91,7 +91,7 @@
 					<div class="icon-block">
 						<p class="light titulos center">Notícias Recentes</p>
 						<?php
-							$args = array( 'numberposts' => '3',
+							$args = array( 'numberposts' => '5',
 											'orderby' => 'post_date',
 											'order' => 'DESC',
 											'post_type' => 'post',
@@ -116,7 +116,7 @@
 					<div class="icon-block">
 						  <p class="light titulos center">Tópicos Recentes do Fórum</p>
 						  <?php
-								$args = array( 'numberposts' => '3',
+								$args = array( 'numberposts' => '5',
 												'orderby' => 'post_date',
 												'order' => 'DESC',
 												'post_type' => 'post',
@@ -141,7 +141,7 @@
 					<div class="icon-block">
 						  <p class="light titulos center">Eventos Próximos</p>
 						  <?php
-								$args = array( 'numberposts' => '3',
+								$args = array( 'numberposts' => '5',
 												'orderby' => 'post_date',
 												'order' => 'DESC',
 												'post_type' => 'post',
