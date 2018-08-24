@@ -4,7 +4,7 @@
  *
  * @package SiteGeralPETUFMA
  * @since SiteGeralPETUFMA 0.1
- * 
+ *
  * Learn more: {@link https://github.com/micaelgoms/SitePetGeral.wiki.git}
  *
  */
@@ -12,13 +12,14 @@
 ?>
 
 <?php get_header(); ?>
-<section>	
+<?php $URL = 'https://pet.ufma.br/' ?>
+<section>
 		<?php
 			$args = array( 'numberposts' => '3',
 							'orderby' => 'post_date',
 							'order' => 'DESC',
 							'post_type' => 'post',
-							'cat' => 1  
+							'cat' => 1
 						);
 			$recent_posts = wp_get_recent_posts( $args );
 			$cont = 1;
@@ -49,12 +50,12 @@
 				<div class="row">
 					<!-- BLOCOS -->
 					<div class="col s12 m12 l4 xl4 menus">
-						<a href="http://localhost/wordpress/index.php/busca/">
+						<a href=<?php echo $URL.'busca'; ?>>
 							<div class="icon-block areabuttom">
 								<h2 class="center"><i class="material-icons icon-color">flash_on</i></h2>
 								<h5 class="center">Notícias</h5>
-								<?php 
-									$quant_posts = $wpdb->get_var("SELECT count FROM wp_term_taxonomy WHERE term_taxonomy_id = '1' "); 
+								<?php
+									$quant_posts = $wpdb->get_var("SELECT count FROM wp_term_taxonomy WHERE term_taxonomy_id = '1' ");
 								?>
 								<p class="light center"> <?php echo $quant_posts; ?> notícias cadastradas</p>
 							</div>
@@ -94,7 +95,7 @@
 											'orderby' => 'post_date',
 											'order' => 'DESC',
 											'post_type' => 'post',
-											'cat' => 1  
+											'cat' => 1
 										);
 							$recent_posts = wp_get_recent_posts( $args );
 							if($recent_posts){
@@ -119,7 +120,7 @@
 												'orderby' => 'post_date',
 												'order' => 'DESC',
 												'post_type' => 'post',
-												'cat' => 7 
+												'cat' => 7
 											);
 								$recent_topic = wp_get_recent_posts( $args );
 								if($recent_topic){
@@ -135,7 +136,7 @@
 							?>
 						</div>
 				</div>
-				
+
 				<div class="col s12 m12 l4">
 					<div class="icon-block">
 						  <p class="light titulos center">Eventos Próximos</p>
@@ -144,7 +145,7 @@
 												'orderby' => 'post_date',
 												'order' => 'DESC',
 												'post_type' => 'post',
-												'cat' => 6 
+												'cat' => 6
 											);
 								$recent_events = wp_get_recent_posts( $args );
 								if($recent_events){
@@ -160,10 +161,10 @@
 							?>
 					</div>
 				</div>
-          
+
 			</div>
 		</div>
 	</div>
 </section>
-	
+
 <?php get_footer(); ?>
