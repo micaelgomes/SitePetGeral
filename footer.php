@@ -7,11 +7,14 @@
  *
  */
 ?>
+<?php $URL = 'https://pet.ufma.br/' ?>
+<?php //$URL = 'http://localhost/wordpress/' ?>
+
 <footer class="page-footer footer-comp">
 	<div class="container">
 		<div class="row">
 			<div class="col l6 s10">
-				<div class="white-text"> <img class="logofooter" src="http://localhost/wordpress/wp-content/uploads/2018/03/logofooter.png" alt="logo Branco"> </div>
+				<div class="white-text"> <img class="logofooter" src=<?php echo $URL."wp-content/uploads/2018/03/logofooter.png"?> alt="logo Branco"> </div>
 				<blockquote class="border-citacao text-footer"> O PET é desenvolvido por grupos de estudantes, com tutoria de um docente, organizados a partir de formações em nível de graduação nas Instituições de Ensino Superior do País orientados pelo princípio da indissociabilidade entre ensino, pesquisa e extensão e da educação tutorial.
 					</blockquote>
 				</div>
