@@ -49,7 +49,7 @@
 			<div class="section border-section">
 				<div class="row">
 					<!-- BLOCOS -->
-					<div class="col s12 m12 l4 xl4 menus">
+					<div class="col s12 m12 l6 xl6 menus">
 						<a href=<?php echo $URL.'busca'; ?>>
 							<div class="icon-block areabuttom">
 								<h2 class="center"><i class="material-icons icon-color">flash_on</i></h2>
@@ -61,6 +61,8 @@
 							</div>
 						</a>
 					</div>
+
+					<!--
 					<div class="col s12 m12 l4 xl4 menus">
 						<a href="#">
 							<div class="icon-block areabuttom">
@@ -70,7 +72,9 @@
 							</div>
 						</a>
 					</div>
-					<div class="col s12 m12 l4 xl4 menus">
+					-->
+
+					<div class="col s12 m12 l6 xl6 menus">
 						<a href="#">
 							<div class="icon-block areabuttom">
 								<h2 class="center"><i class="material-icons icon-color">event</i></h2>
@@ -87,7 +91,7 @@
 	<div class="container submenu">
 		<div class="section">
 			<div class="row">
-				<div class="col s12 m12 l4">
+				<div class="col s12 m12 l6 xl6">
 					<div class="icon-block">
 						<p class="light titulos center">Notícias Recentes</p>
 						<?php
@@ -112,6 +116,7 @@
 					</div>
 				</div>
 
+				<!--
 				<div class="col s12 m12 l4">
 					<div class="icon-block">
 						  <p class="light titulos center">Tópicos Recentes do Fórum</p>
@@ -136,8 +141,9 @@
 							?>
 						</div>
 				</div>
+				-->
 
-				<div class="col s12 m12 l4">
+				<div class="col s12 m12 l6 xl6">
 					<div class="icon-block">
 						  <p class="light titulos center">Eventos Próximos</p>
 						  <?php
