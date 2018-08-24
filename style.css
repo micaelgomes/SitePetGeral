@@ -793,3 +793,11 @@ ul.pagination li a:hover:not(.active) {
 .parallax-container {
   height: 610px;
 }
+
+.ajuste-slider {
+  height: 600px !important;
+}
+
+.ajuste-name-slider {
+  padding-top: 10%;
+}

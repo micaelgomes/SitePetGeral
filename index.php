@@ -17,7 +17,21 @@
 
 <section>
 	<div class="parallax-container">
-		<div class="parallax"><img src=<?php echo $URL.'wp-content/uploads/2018/04/sec2.jpg'; ?>></div>
+		<div class="parallax"><img src=<?php echo $URL.'wp-content/uploads/2018/08/sec4.png'; ?>></div>
+		<div class="carousel carousel-slider center ajuste-slider" data-indicators="true">
+			<div class="carousel-fixed-item center">
+				<h5 class="white-text nunito">Um ambiente político para todas as pautas.</h5>
+			</div>
+			<div class="carousel-item white-text" href="#one!">
+				<h1 class="nunito ajuste-name-slider">ENSINO</h1>
+			</div>
+			<div class="carousel-item white-text" href="#two!">
+				<h1 class="nunito ajuste-name-slider">PESQUISA</h1>
+			</div>
+			<div class="carousel-item white-text" href="#three!">
+				<h1 class="nunito ajuste-name-slider">EXTENSÃO</h1>
+			</div>
+		</div>
 	</div>
 </section>
 <section>
