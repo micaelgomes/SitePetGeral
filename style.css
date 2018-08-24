@@ -190,7 +190,7 @@ footer.page-footer {
     padding-top: 5px;
 }
 
-.areabuttom{
+.areabuttom {
     padding-top: 2px;
     padding-bottom: 2px;
     padding-left: 0px;
@@ -199,11 +199,29 @@ footer.page-footer {
 
     -webkit-transition-duration: 0.2s;
     transition-duration: 0.2s;
-    background-color: white;
+    background-color: #DDDDDD;
 }
+
+.areabuttom1 {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-radius: 10px;
+
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    background-color: #DDDDDD;
+}
+
 
 .areabuttom:hover{
     background-color: #18CDCA;
+    color: white;
+}
+
+.areabuttom1:hover{
+    background-color: #FF5349;
     color: white;
 }
 
@@ -308,7 +326,7 @@ footer.page-footer {
 }
 
 .background-section{
-    background-color: #F0F0F1;
+    background-color: #FFF;
 }
 
 .background-section-sobre {
@@ -772,8 +790,6 @@ ul.pagination li a:hover:not(.active) {
     font-size: 18px;
 }
 
-.normalize {
-    padding: 0;
-    border: 0;
-    margin: 0;
+.parallax-container {
+  height: 610px;
 }

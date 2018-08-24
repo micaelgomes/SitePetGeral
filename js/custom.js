@@ -1,7 +1,7 @@
 // button burguer
-$(document).ready(function(){		
+$(document).ready(function(){
 	$(".button-collapse").sideNav();
-});	
+});
 
 // Container
 $(document).ready(function(){
@@ -15,4 +15,7 @@ $(document).ready(function(){
 
 $('.carousel.carousel-slider').carousel({fullWidth: true});
 
-
+//parallax
+$(document).ready(function(){
+	$('.parallax').parallax();
+});

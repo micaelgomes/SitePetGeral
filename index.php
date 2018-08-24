@@ -12,9 +12,13 @@
 ?>
 
 <?php get_header(); ?>
-<?php $URL = 'https://pet.ufma.br/' ?>
-<section>
+<?php //$URL = 'https://pet.ufma.br/' ?>
+<?php $URL = 'http://localhost/wordpress/' ?>
 
+<section>
+	<div class="parallax-container">
+		<div class="parallax"><img src=<?php echo $URL.'wp-content/uploads/2018/04/sec2.jpg'; ?>></div>
+	</div>
 </section>
 <section>
 	<div class="background-section">
@@ -28,7 +32,7 @@
 								<h2 class="center"><i class="material-icons icon-color">flash_on</i></h2>
 								<h5 class="center">Notícias</h5>
 								<?php
-									$quant_posts = $wpdb->get_var("SELECT count FROM wp_term_taxonomy WHERE term_taxonomy_id = '1' ");
+									$quant_posts = $wpdb->get_var("SELECT count FROM wp_term_taxonomy");
 								?>
 								<p class="light center"> <?php echo $quant_posts; ?> notícias cadastradas</p>
 							</div>
@@ -49,7 +53,7 @@
 
 					<div class="col s12 m12 l6 xl6 menus">
 						<a href="#">
-							<div class="icon-block areabuttom">
+							<div class="icon-block areabuttom1">
 								<h2 class="center"><i class="material-icons icon-color">event</i></h2>
 								<h5 class="center">Eventos</h5>
 								<p class="light center">Realizações futuras</p>

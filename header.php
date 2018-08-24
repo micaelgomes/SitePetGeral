@@ -36,15 +36,11 @@
 
 <body <?php body_class(); ?>>
 <header>
-    <div class="normalize">
-      <div class="row">
-        <div class="col s12 m12 l12 xl12 center">
-          <div class="red darken-2">
-            <span class="white-text"> Este Site está em BETA, algumas páginas ainda estão em construção. </span>
-          </div>
-        </div>
-      </div>
+  <div class="col s12 m12 l12 xl12 center">
+    <div class="red darken-2">
+      <span class="white-text"> Este Site está em BETA, algumas páginas ainda estão em construção. </span>
     </div>
+  </div>
 	<nav class="white" role="navigation">
     <div class="nav-wrapper container negrito">
       <a id="logo-container" href=<?php echo $URL; ?> class="brand-logo new-icon">
