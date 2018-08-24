@@ -79,18 +79,18 @@ function query_petianos(){
 }
 //adiciona o json com endpoint
 add_action( 'rest_api_init', function () {
-	register_rest_route( 'pethome/v1', '/petianos_computacao', array(
+	register_rest_route( 'pethome/v1', '/petianos', array(
 		'methods' => 'GET',
 		'callback' => 'query_petianos',
 	) );
-	register_rest_route( 'pethome/v1', '/computacao', array(
+	register_rest_route( 'pethome/v1', '/pet', array(
 		'methods' => 'GET',
 		'callback' => 'query_pet_home',
 	) );
 } );
 
-// ROOT_FOLDER/wp-json/pethome/v1/petianos_computacao
-// ROOT_FOLDER/wp-json/pethome/v1/computacao
+// ROOT_FOLDER/wp-json/pethome/v1/petianos
+// ROOT_FOLDER/wp-json/pethome/v1/pet
 //===========================================================
 
 function pet_home_init(){
