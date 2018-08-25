@@ -35,6 +35,13 @@
         <div class="col s12 m9 l9 xl9 body-side-result">
 
         <?php
+        $args = array( 'numberposts' => '5',
+                        'orderby' => 'post_date',
+                        'order' => 'DESC',
+                        'post_type' => 'post'
+                    );
+              
+                        
         //query
         $posts = my_query_posts($_POST['search']);
 
