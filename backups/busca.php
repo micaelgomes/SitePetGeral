@@ -19,7 +19,7 @@
     <div class="parallax-container" style="height: 200px !important;">
       <div class="parallax"><img src=<?php echo $URL.'wp-content/uploads/sites/4/2018/08/sec4.png'; ?>></div>
       <!--<h3 class="center nunito white-text" style="padding: 3.5%; font-size: 60px;"> PET UFMA </h3>-->
-      <div class="container center">
+      <div class="container">
         <div id="search-box-side">
             <div id="search-form-side">
             <form method="post" id="search-form" action= "/wordpress/index.php/busca"/>
@@ -29,6 +29,21 @@
             </div>
         </div>
       </div>
+    </div>
+
+
+    <div class="title-post nunito">
+        <div class="container">
+            <h3> Resultados </h3>
+            <div id="search-box-side">
+                <div id="search-form-side">
+                <form method="post" id="search-form" action= "/wordpress/index.php/busca"/>
+                    <input  name = "search" id="search-text-side" type="text" placeholder=" Faça uma busca... ">
+                    <button type="submit" id="search-button-side" onclick="">Pesquisar</button>
+                </form>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="row">

@@ -595,12 +595,12 @@ ul.pagination li a:hover:not(.active) {
 /* news */
 #search-box-side {
     position: relative;
-    width: 70%;
-    margin: -43px;
-		padding: 10%;
-		padding-left: 0 !important;
-    padding-top: 5% !important;
-    padding-bottom: 6%;
+    /*width: 70%;
+    margin: -43px;*/
+	padding: 10%;
+	padding-left: 3% !important;
+    padding-top: 8.5% !important;
+    /*padding-bottom: 6%;*/
 }
 
 #search-form-side {
