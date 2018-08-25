@@ -150,15 +150,15 @@ function materialize_css_scripts() {
 	 	wp_enqueue_script( 'materialize-css-jquery', 'https://code.jquery.com/jquery-2.1.1.min.js', '', null, true );
 	}
 
+	//wp_enqueue_style('materialize_css-style', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css', '', null, false);
 	
-	$themecolors = get_theme_mod('materialize_colors');
-	wp_enqueue_style('material-colors', get_template_directory_uri() . '/css/'. $themecolors);
+	wp_enqueue_style('materialize_css-style', 'https://pet.ufma.br/wp-content/themes/SitePetGeral/css/materialize.min.css', '', null, false);
 
-	wp_enqueue_style('materialize_css-style', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css', '', null, false);
-	
 	wp_enqueue_style('style', get_stylesheet_uri() );
 	 
-	wp_enqueue_script('materialize_css_scripts', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js', '', null, true);
+	//wp_enqueue_script('materialize_css_scripts', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js', '', null, true);
+
+	wp_enqueue_script('materialize_css_scripts', 'https://pet.ufma.br/wp-content/themes/SitePetGeral/js/materialize.min.js', '', null, true);
 
 	wp_enqueue_script('materialize_css-scripts', get_template_directory_uri() . '/js/custom.js', array(), '1.0', true);
 

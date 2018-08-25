@@ -60,13 +60,6 @@ p {
   color: #292C44;
 }
 
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
-}
-
 .parallax-container .section {
     width: 100%;
 }
@@ -791,11 +784,15 @@ ul.pagination li a:hover:not(.active) {
 }
 
 .parallax-container {
-  height: 610px;
+    height: 570px;
+}
+
+.paralax-apresentacao {
+    height: 150px;    
 }
 
 .ajuste-slider {
-  height: 600px !important;
+  height: 550px !important;
 }
 
 .ajuste-name-slider {

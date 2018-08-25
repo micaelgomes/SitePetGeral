@@ -35,50 +35,58 @@
 	</div>
 </section>
 <section>
+	<!--
 	<div class="background-section">
 		<div class="container">
 			<div class="section border-section">
-				<div class="row"> 
-					<div class="col s12 m12 l4 xl4 menus">
-            <h2><i class="material-icons md-48">lightbulb_outline</i></h2>    
-	          <div class="icon-block">
-	            <p class="light titulos center flow-text"> Criatividade </p>
-	            <blockquote class = "flow-text body-filosofia border-citacao-sobre">
-	                O programa incentiva a criação criativa de metodologias de ensino tudo com a atuação dinâmica e incisiva de discentes envolvidos no programa. Os benefícios são a renovação dos currículos, debate aberto e amplo de novas metodologias. 
-	            </blockquote>
-	          </div>
+				<div class="row">
+					 BLOCOS 
+					<div class="col s12 m12 l6 xl6 menus">
+						<a href=<?php echo $URL.'busca'; ?>>
+							<div class="icon-block areabuttom">
+								<h2 class="center"><i class="material-icons icon-color">flash_on</i></h2>
+								<h5 class="center">Notícias</h5>
+								<?php
+									$quant_posts = $wpdb->get_var("SELECT count FROM wp_term_taxonomy");
+								?>
+								<p class="light center"> <?php echo $quant_posts; ?> notícias cadastradas</p>
+							</div>
+						</a>
 					</div>
+
 			
 					<div class="col s12 m12 l4 xl4 menus">
-			      <h2><i class="material-icons md-48">face</i></h2>
-	          <div class="icon-block">
-	            <p class="light titulos center flow-text"> Cidadania </p>
-	            <blockquote class = "flow-text body-filosofia border-citacao-sobre">
-	                Os discentes do programa são envolvidos em práticas de pesquisa levando em consideração temas sociais, cidadania, ética, dentre outros de maneira a desenvolver cidadãos conscientes. 
-	            </blockquote>
-	          </div>
+						<a href="#">
+							<div class="icon-block areabuttom">
+								<h2 class="center"><i class="material-icons icon-color">forum</i></h2>
+								<h5 class="center">Fórum</h5>
+								<p class="light center">14 ambientes de discursão</p>
+							</div>
+						</a>
 					</div>
 					
-					<div class="col s12 m12 l4 xl4 menus">
-			      <h2><i class="material-icons md-48">supervisor_account</i></h2>
-            <div class="icon-block">
-              <p class="light titulos center flow-text"> União </p>
-              <blockquote class = "flow-text body-filosofia border-citacao-sobre">
-                  Ações que proporcionam o desenvolvimento conjunto da sociedade, ampliando o leque de participação da universidade na comunidade e formação alinhada com os problemas sociais do Estado. 
-              </blockquote>
-            </div>
+
+					<div class="col s12 m12 l6 xl6 menus">
+						<a href="#">
+							<div class="icon-block areabuttom1">
+								<h2 class="center"><i class="material-icons icon-color">event</i></h2>
+								<h5 class="center">Eventos</h5>
+								<p class="light center">Realizações futuras</p>
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	-->
 
 	<div class="container submenu">
 		<div class="section">
 			<div class="row">
-				<div class="col s12 m12 l6 xl6x">
+				<div class="col s12 m12 l6 xl6">
 					<div class="icon-block">
-						<p class="light titulos center">Notícias Recentes dos PET's</p>
+						<p class="light titulos center">Notícias Recentes</p>
 						<?php
 							$args = array( 'numberposts' => '5',
 											'orderby' => 'post_date',
@@ -102,7 +110,7 @@
 
 				<div class="col s12 m12 l6 xl6">
 					<div class="icon-block">
-						  <p class="light titulos center">Eventos Próximos do PET</p>
+						  <p class="light titulos center">Eventos Próximos</p>
 						  <?php
 								$args = array( 'numberposts' => '5',
 												'orderby' => 'post_date',
