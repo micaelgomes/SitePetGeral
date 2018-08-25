@@ -382,15 +382,15 @@ footer.page-footer {
 }
 
 .color-link a:link {
-    color: #000;
+    color: #000 !important;
 }
 
 .color-link a:visited {
-    color: #000;
+    color: #000 !important;
 }
 
 .color-link a:hover {
-    color: #FF5349;
+    color: #FF5349 !important;
 }
 
 /* mouse over link */
