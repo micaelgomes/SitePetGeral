@@ -43,11 +43,10 @@
 
         ?>
 
-        <div class="card-panel card-news">
-            <h4 class="black-text nunito"> <?php echo $post->post_title; ?></h5>
-
+        <div class="card-panel card-news color-link">
+            <h4 class="black-text nunito color-link"><?echo '<a href="'.get_permalink( $id ).'">'.get_the_title( $id ).'</a>'; ?></h4>
             <div class=" body-post black-text inside-news flow-text truncate">
-                <?php echo $post->post_content; ?>
+                <?php //echo $post->post_content; ?>
             </div>
             <br>
             <?php
@@ -71,7 +70,6 @@
         ?>
         <div class="card-panel card-news nunito">
             <h5 class="black-text"> Resultados não foram encontrados! </h5>
-
         </div>
     <?php
     }

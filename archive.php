@@ -30,7 +30,7 @@
         <div class="col s12 m9 l9 xl9 body-side-result">
             <?php while ( have_posts() ) : the_post(); ?>
                     <div class="card-panel card-news">
-                        <h4 class="black-text nunito"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
+                        <h4 class="black-text nunito color-link"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
                         <!--<small><?php //the_time('F jS, Y') ?> by <?php //the_author_posts_link() ?></small>-->
 
                         <div class="body-post black-text inside-news flow-text truncate">

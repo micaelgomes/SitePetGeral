@@ -378,7 +378,19 @@ footer.page-footer {
 
 /* visited link */
 .border-citacao-post a:visited {
-    color: #18CDCA;
+    color: #000;
+}
+
+.color-link a:link {
+    color: #000;
+}
+
+.color-link a:visited {
+    color: #000;
+}
+
+.color-link a:hover {
+    color: #FF5349;
 }
 
 /* mouse over link */
@@ -493,11 +505,11 @@ footer.page-footer {
 }
 
 .body-side-page {
-    margin-top: 2%;
+    /*margin-top: 2%;
     padding-top: 2% !important;
-    background-color: #F0F0F1;
-    padding-bottom: 20% !important;
-    border-radius: 7px 7px 7px 7px;
+    background-color: #F0F0F1;*/
+    padding-bottom: 5% !important;
+    /*border-radius: 7px 7px 7px 7px;*/
 }
 
 .body-side-result {
