@@ -43,25 +43,26 @@
         $recent_posts = wp_get_recent_posts( $args );
         if($recent_posts){
             foreach( $recent_posts as $recent ){
-                echo ' <blockquote class = "border-citacao-post nunito"><p class="light"><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </p></blockquote>';
-                echo '<hr>';
+                //echo ' <blockquote class = "border-citacao-post nunito"><p class="light"><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </p></blockquote>';
+                //echo '<hr>';
             }
             wp_reset_query();
         } else {
-            echo '<br />';
-            echo '<p class="light center"> Nada Cadastrado </p>';
+            //echo '<br />';
+            //echo '<p class="light center"> Nada Cadastrado </p>';
         }
                         
         //query
         $posts = my_query_posts($_POST['search']);
 
     if ( $posts!=false){
+        $cont = 0;
         foreach ($posts as $post){
 
         ?>
 
         <div class="card-panel card-news color-link">
-            <h4 class="black-text nunito color-link"><?echo '<a href="'.get_permalink( $id ).'">'.get_the_title( $id ).'</a>'; ?></h4>
+            <h4 class="black-text nunito color-link"><?php echo $post->post_title; ?></h4>
             <div class=" body-post black-text inside-news flow-text truncate">
                 <?php //echo $post->post_content; ?>
             </div>
@@ -77,6 +78,11 @@
                         }
                     }
                 }
+
+        if($cont == 7)
+            break;
+        else
+            $cont++;
         ?>
 
         </div>
