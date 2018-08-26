@@ -34,24 +34,7 @@
     <div class="row">
         <div class="col s12 m9 l9 xl9 body-side-result">
 
-        <?php
-        $args = array( 'numberposts' => '5',
-                        'orderby' => 'post_date',
-                        'order' => 'DESC',
-                        'post_type' => 'post'
-                    );
-        $recent_posts = wp_get_recent_posts( $args );
-        if($recent_posts){
-            foreach( $recent_posts as $recent ){
-                //echo ' <blockquote class = "border-citacao-post nunito"><p class="light"><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </p></blockquote>';
-                //echo '<hr>';
-            }
-            wp_reset_query();
-        } else {
-            //echo '<br />';
-            //echo '<p class="light center"> Nada Cadastrado </p>';
-        }
-                        
+        <?php                        
         //query
         $posts = my_query_posts($_POST['search']);
 
