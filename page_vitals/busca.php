@@ -41,34 +41,33 @@
     if ( $posts!=false){
         $cont = 0;
         foreach ($posts as $post){
-
-        ?>
-
-        <div class="card-panel card-news color-link">
-            <h4 class="black-text nunito color-link"><?php echo $post->post_title; ?></h4>
-            <div class=" body-post black-text inside-news flow-text truncate">
-                <?php //echo $post->post_content; ?>
-            </div>
-            <br>
-            <?php
-            $category = my_query_categories($post->ID);
-                if ( $category!=false){
-                    foreach ($category as $cat){
-                        if($tag->name!="Sem categoria"){
-            ?>
-                            <div class="chip"> <?php echo $cat->name; ?></div>
-            <?php
-                        }
-                    }
-                }
-
-        if($cont == 7)
-            break;
-        else
             $cont++;
+            if($cont <= 5){ 
+        ?>
+                <div class="card-panel card-news color-link">
+                    <h4 class="black-text nunito color-link"><?php echo $post->post_title; ?></h4>
+                    <div class=" body-post black-text inside-news flow-text truncate">
+                        <?php //echo $post->post_content; ?>
+                    </div>
+                    <br>
+                    <?php
+                    $category = my_query_categories($post->ID);
+                        if ( $category!=false){
+                            foreach ($category as $cat){
+                                if($tag->name!="Sem categoria"){
+                    ?>
+                                    <div class="chip"> <?php echo $cat->name; ?></div>
+                    <?php
+                                }
+                            }
+                        }
+                ?>
+
+                </div>
+        <?php
+            }                 
         ?>
 
-        </div>
 
         <?php
         }
