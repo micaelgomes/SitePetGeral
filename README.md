@@ -45,9 +45,9 @@ SUMÁRIO:
 ## PLUGIN
   + adiconar nova tela com informações do PET
   + gerar .JSON para compartilhar informações (REST API)
-    + para acessar o JSON basta acrescentar ao link do site:
-          + ROOT FOLDER /wp-json/pethome/v1/petianos
-          + ROOT FOLDER /wp-json/pethome/v1/pet
+  + para acessar o JSON basta acrescentar ao link do site:
+    + ROOT FOLDER /wp-json/pethome/v1/petianos
+    + ROOT FOLDER /wp-json/pethome/v1/pet
 
 # IDEIAS 
   + colocar eventos(comentarios) e forúns como post
