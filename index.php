@@ -17,7 +17,7 @@
 
 <section>
 	<div class="parallax-container">
-		<div class="parallax"><img src=<?php echo $URL.'wp-content/uploads/sites/4/2018/08/sec4.png'; ?>></div>
+		<div class="parallax"><img src="http://pet.ufma.br/wp-content/uploads/sites/4/2018/09/back1.png"></div>
 		<div class="carousel carousel-slider center ajuste-slider" data-indicators="true">
 			<div class="carousel-fixed-item center">
 				<h5 class="white-text nunito">Um ambiente político para todas as pautas.</h5>
@@ -38,33 +38,33 @@
 	<div class="background-section">
 		<div class="container">
 			<div class="section border-section">
-				<div class="row"> 
+				<div class="row">
 					<div class="col s12 m12 l4 xl4 menus">
-            <h2><i class="material-icons md-48">lightbulb_outline</i></h2>    
+            <h2><i class="material-icons md-48">lightbulb_outline</i></h2>
 	          <div class="icon-block">
 	            <p class="light titulos center flow-text"> Criatividade </p>
 	            <blockquote class = "flow-text body-filosofia border-citacao-sobre">
-	                O programa incentiva a criação criativa de metodologias de ensino tudo com a atuação dinâmica e incisiva de discentes envolvidos no programa. Os benefícios são a renovação dos currículos, debate aberto e amplo de novas metodologias. 
+	                O programa incentiva a criação criativa de metodologias de ensino tudo com a atuação dinâmica e incisiva de discentes envolvidos no programa. Os benefícios são a renovação dos currículos, debate aberto e amplo de novas metodologias.
 	            </blockquote>
 	          </div>
 					</div>
-			
+
 					<div class="col s12 m12 l4 xl4 menus">
 			      <h2><i class="material-icons md-48">face</i></h2>
 	          <div class="icon-block">
 	            <p class="light titulos center flow-text"> Cidadania </p>
 	            <blockquote class = "flow-text body-filosofia border-citacao-sobre">
-	                Os discentes do programa são envolvidos em práticas de pesquisa levando em consideração temas sociais, cidadania, ética, dentre outros de maneira a desenvolver cidadãos conscientes. 
+	                Os discentes do programa são envolvidos em práticas de pesquisa levando em consideração temas sociais, cidadania, ética, dentre outros de maneira a desenvolver cidadãos conscientes.
 	            </blockquote>
 	          </div>
 					</div>
-					
+
 					<div class="col s12 m12 l4 xl4 menus">
 			      <h2><i class="material-icons md-48">supervisor_account</i></h2>
             <div class="icon-block">
               <p class="light titulos center flow-text"> União </p>
               <blockquote class = "flow-text body-filosofia border-citacao-sobre">
-                  Ações que proporcionam o desenvolvimento conjunto da sociedade, ampliando o leque de participação da universidade na comunidade e formação alinhada com os problemas sociais do Estado. 
+                  Ações que proporcionam o desenvolvimento conjunto da sociedade, ampliando o leque de participação da universidade na comunidade e formação alinhada com os problemas sociais do Estado.
               </blockquote>
             </div>
 					</div>
