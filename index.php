@@ -17,7 +17,7 @@
 
 <section>
 	<div class="parallax-container">
-		<div class="parallax"><img src="http://pet.ufma.br/wp-content/uploads/sites/4/2018/09/back1.png"></div>
+		<div class="parallax"><img src="http://pet.ufma.br/wp-content/uploads/sites/4/2018/09/back.png"></div>
 		<div class="carousel carousel-slider center ajuste-slider" data-indicators="true">
 			<div class="carousel-fixed-item center">
 				<h5 class="white-text nunito">Um ambiente político para todas as pautas.</h5>
