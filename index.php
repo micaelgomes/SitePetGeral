@@ -43,7 +43,7 @@
             <h2><i class="material-icons md-48">lightbulb_outline</i></h2>
 	          <div class="icon-block">
 	            <p class="light titulos center flow-text"> Criatividade </p>
-	            <blockquote class = "flow-text body-filosofia border-citacao-sobre">
+	            <blockquote class = "flow-text border-color">
 	                O programa incentiva a criação criativa de metodologias de ensino tudo com a atuação dinâmica e incisiva de discentes envolvidos no programa. Os benefícios são a renovação dos currículos, debate aberto e amplo de novas metodologias.
 	            </blockquote>
 	          </div>
@@ -53,7 +53,7 @@
 			      <h2><i class="material-icons md-48">face</i></h2>
 	          <div class="icon-block">
 	            <p class="light titulos center flow-text"> Cidadania </p>
-	            <blockquote class = "flow-text body-filosofia border-citacao-sobre">
+	            <blockquote class = "flow-text border-color">
 	                Os discentes do programa são envolvidos em práticas de pesquisa levando em consideração temas sociais, cidadania, ética, dentre outros de maneira a desenvolver cidadãos conscientes.
 	            </blockquote>
 	          </div>
@@ -63,7 +63,7 @@
 			      <h2><i class="material-icons md-48">supervisor_account</i></h2>
             <div class="icon-block">
               <p class="light titulos center flow-text"> União </p>
-              <blockquote class = "flow-text body-filosofia border-citacao-sobre">
+              <blockquote class = "flow-text border-color">
                   Ações que proporcionam o desenvolvimento conjunto da sociedade, ampliando o leque de participação da universidade na comunidade e formação alinhada com os problemas sociais do Estado.
               </blockquote>
             </div>
@@ -88,7 +88,7 @@
 							$recent_posts = wp_get_recent_posts( $args );
 							if($recent_posts){
 								foreach( $recent_posts as $recent ){
-									echo ' <blockquote class = "border-citacao-post nunito"><p class="light"><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </p></blockquote>';
+									echo ' <blockquote class = "border-color-link nunito"><p class="light link-color"><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </p></blockquote>';
 									echo '<hr>';
 								}
 								wp_reset_query();
@@ -113,7 +113,7 @@
 								$recent_events = wp_get_recent_posts( $args );
 								if($recent_events){
 									foreach( $recent_events as $recent ){
-										echo '<blockquote class = "border-citacao-post nunito"> <p class="light"><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </p> </blockquote>';
+										echo '<blockquote class = "border-color-link nunito"> <p class="light link-color"><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </p> </blockquote>';
 										echo '<hr>';
 									}
 									wp_reset_query();
@@ -124,7 +124,6 @@
 							?>
 					</div>
 				</div>
-
 			</div>
 		</div>
 	</div>

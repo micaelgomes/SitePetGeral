@@ -258,43 +258,37 @@ footer.page-footer {
     max-width: 100%;
 }
 
+.border-color {
+  border-color: #000;
+}
+
+.border-color-link {
+  border-color: #18CDCA;
+}
+
 /* unvisited link */
-.border-citacao-post a:link {
-    color: #18CDCA;
+.link-color a:link {
+  color: #18CDCA;
 }
 
 /* visited link */
-.border-citacao-post a:visited {
-    color: #000;
-}
-
-.color-link a:link {
-    color: #000 !important;
-}
-
-.color-link a:visited {
-    color: #000 !important;
-}
-
-.color-link a:hover {
-    color: #FF5349 !important;
+.link-color a:visited {
+  color: #000;
 }
 
 /* mouse over link */
-.border-citacao-post a:hover {
-    color: #FF5349;
+.link-color a:hover {
+  color: #FF5349;
 }
 
 /* selected link */
-.border-citacao-post a:active {
-    color: #292C44;
+.link-color a:active {
+  color: #292C44;
 }
-
 
 .icon-color{
     color: #000000;
     padding-top: 1%;
-
 }
 
 .button-space{

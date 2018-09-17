@@ -12,8 +12,9 @@
 <?php get_header(); ?>
 <?php $URL = 'https://pet.ufma.br/' ?>
 <?php //$URL = 'http://localhost/wordpress/' ?>
+
 	<div class="parallax-container" style="height: 200px !important;">
-    <div class="parallax"><img src=<?php echo $URL.'wp-content/uploads/sites/4/2018/08/sec4.png'; ?>></div>
+    <div class="parallax"><img src="http://pet.ufma.br/wp-content/uploads/sites/4/2018/09/back.png"></div>
     <h3 class="center nunito white-text" style="padding: 3.5%; font-size: 60px;"> PET UFMA </h3>
   </div>
 
