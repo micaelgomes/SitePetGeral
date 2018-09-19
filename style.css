@@ -259,11 +259,11 @@ footer.page-footer {
 }
 
 .border-color {
-  border-color: #000;
+  border-color: #000 !important;
 }
 
 .border-color-link {
-  border-color: #18CDCA;
+  border-color: #18CDCA !important;
 }
 
 /* unvisited link */
