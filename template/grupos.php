@@ -56,7 +56,7 @@ $petianos_bio = rest_api_php_object("https://pet.ufma.br/bio/wp-json/pethome/v1/
 		<div class="col xl6 l6 m6 s6">
 			<div class="card">
 		    <div class="card-image waves-effect waves-block waves-light">
-		      <img class="activator" src="https://pet.ufma.br/comp/wp-content/uploads/sites/1/2018/09//comp.png">
+		      <img class="activator" src=<?php echo $pet_comp->imagem; ?>>
 		    </div>
 		    <div class="card-content">
 		      <span class="card-title activator grey-text text-darken-4"><?php echo $pet_comp->nome; ?><i class="material-icons right">more_vert</i></span>
@@ -108,16 +108,16 @@ $petianos_bio = rest_api_php_object("https://pet.ufma.br/bio/wp-json/pethome/v1/
 		  </div>	
 		</div>
 	</div>		
-</div>
+
 
 
 <!--PET FISÍCA-->
-<div class="row">
+
 	<div class="container">
 		<div class="col xl6 l6 m6 s6">
 			<div class="card">
 		    <div class="card-image waves-effect waves-block waves-light">
-		      <img class="activator" src="https://pet.ufma.br/comp/wp-content/uploads/sites/1/2018/09//comp.png">
+		      <img class="activator" src=<?php echo $pet_fis->imagem; ?>>
 		    </div>
 		    <div class="card-content">
 		      <span class="card-title activator grey-text text-darken-4"><?php echo $pet_fis->nome; ?><i class="material-icons right">more_vert</i></span>
@@ -138,7 +138,7 @@ $petianos_bio = rest_api_php_object("https://pet.ufma.br/bio/wp-json/pethome/v1/
 		      ?>
 
 		      <div class="row center">
-		      	<a class="waves-effect waves-light btn modal-trigger blue" href="#modal1">Integrantes</a>
+		      	<!--<a class="waves-effect waves-light btn modal-trigger blue" href="#modal1">Integrantes</a>-->
 		      </div>
 		      <div class="row center">
 		      	<div class="col xl4 l4 m4 s4"><a href=<?php echo $pet_fis->facebook; ?>><i class="fab fa-facebook"></i></a></div>
@@ -169,17 +169,15 @@ $petianos_bio = rest_api_php_object("https://pet.ufma.br/bio/wp-json/pethome/v1/
 		  </div>	
 		</div>
 	</div>		
-</div>
 
 
 <!--PET BIOLOGIA-->
 
-<div class="row">
 	<div class="container">
 		<div class="col xl6 l6 m6 s6">
 			<div class="card">
 		    <div class="card-image waves-effect waves-block waves-light">
-		      <img class="activator" src="https://pet.ufma.br/comp/wp-content/uploads/sites/1/2018/09//comp.png">
+		      <img class="activator" src=<?php echo $pet_bio->imagem; ?>>
 		    </div>
 		    <div class="card-content">
 		      <span class="card-title activator grey-text text-darken-4"><?php echo $pet_bio->nome; ?><i class="material-icons right">more_vert</i></span>
@@ -200,7 +198,7 @@ $petianos_bio = rest_api_php_object("https://pet.ufma.br/bio/wp-json/pethome/v1/
 		      ?>
 
 		      <div class="row center">
-		      	<a class="waves-effect waves-light btn modal-trigger blue" href="#modal1">Integrantes</a>
+		      	<!--<a class="waves-effect waves-light btn modal-trigger blue" href="#modal1">Integrantes</a>-->
 		      </div>
 		      <div class="row center">
 		      	<div class="col xl4 l4 m4 s4"><a href=<?php echo $pet_bio->facebook; ?>><i class="fab fa-facebook"></i></a></div>
