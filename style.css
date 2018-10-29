@@ -1,4 +1,4 @@
-/*
+﻿/*
 Theme Name: SiteGeralPETUFMA
 Theme URI:
 Author: Pet de Computação
@@ -409,4 +409,17 @@ ul.pagination li a:hover:not(.active) {
 
 .ajuste-name-slider {
   padding-top: 10%;
+}
+
+/*  CORREÇÕES  */
+/*   CCS 2.0   */
+
+.text-grid-index {
+  text-align: -webkit-match-parent !important;
+  font-size: 8px !important;
+}
+
+.padding-grid-index {
+  padding-left: 2% !important;
+  padding-right: : 2% !important;
 }

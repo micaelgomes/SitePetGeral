@@ -36,14 +36,14 @@
 </section>
 <section>
 	<div class="background-section">
-		<div class="container">
-			<div class="section border-section">
+		<div class="padding-grid-index">
+			<div class="section">
 				<div class="row">
 					<div class="col s12 m12 l4 xl4 menus">
             <h2><i class="material-icons md-48">lightbulb_outline</i></h2>
 	          <div class="icon-block">
 	            <p class="light titulos center flow-text"> Criatividade </p>
-	            <blockquote class = "flow-text border-color">
+	            <blockquote class = "flow-text border-color text-grid-index">
 	                O programa incentiva a criação criativa de metodologias de ensino tudo com a atuação dinâmica e incisiva de discentes envolvidos no programa. Os benefícios são a renovação dos currículos, debate aberto e amplo de novas metodologias.
 	            </blockquote>
 	          </div>
@@ -53,7 +53,7 @@
 			      <h2><i class="material-icons md-48">face</i></h2>
 	          <div class="icon-block">
 	            <p class="light titulos center flow-text"> Cidadania </p>
-	            <blockquote class = "flow-text border-color">
+	            <blockquote class = "flow-text border-color text-grid-index">
 	                Os discentes do programa são envolvidos em práticas de pesquisa levando em consideração temas sociais, cidadania, ética, dentre outros de maneira a desenvolver cidadãos conscientes.
 	            </blockquote>
 	          </div>
@@ -63,7 +63,7 @@
 			      <h2><i class="material-icons md-48">supervisor_account</i></h2>
             <div class="icon-block">
               <p class="light titulos center flow-text"> União </p>
-              <blockquote class = "flow-text border-color">
+              <blockquote class = "flow-text border-color text-grid-index">
                   Ações que proporcionam o desenvolvimento conjunto da sociedade, ampliando o leque de participação da universidade na comunidade e formação alinhada com os problemas sociais do Estado.
               </blockquote>
             </div>
