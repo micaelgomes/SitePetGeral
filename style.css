@@ -83,6 +83,23 @@ Tags: PET, PETUFMA, Materialize
   * 8.0 Header
   */
 
+  nav ul a,
+  nav .brand-logo {
+    color: #444;
+  }
+
+  p {
+    line-height: 2rem;
+  }
+
+  .button-collapse {
+    color: #292C44;
+  }
+
+  .parallax-container .section {
+      width: 100%;
+  }
+
  /**
   * 9.0 Widgets
   */
