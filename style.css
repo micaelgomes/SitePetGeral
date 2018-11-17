@@ -263,7 +263,7 @@ footer.page-footer {
 }
 
 .border-color-link {
-  border-color: #18CDCA !important;
+  border-color: #FFF !important;
 }
 
 /* unvisited link */
@@ -318,6 +318,10 @@ footer.page-footer {
     padding-left: 25px;
     padding-right: 10px;
     font-size: 16px;
+}
+
+.body-post {
+    text-align: justify;
 }
 
 .titulonews{
@@ -416,7 +420,7 @@ ul.pagination li a:hover:not(.active) {
 
 .text-grid-index {
   text-align: -webkit-match-parent !important;
-  font-size: 18px !important;
+  font-size: 38px !important;
 }
 
 .padding-grid-index {

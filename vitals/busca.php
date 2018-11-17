@@ -9,15 +9,15 @@
  */
 ?>
 
-<?php 
+<?php
     get_header();
     $URL = 'https://pet.ufma.br/';
     //$URL = 'http://localhost/wordpress/';
     $pagename = get_query_var('pagename');
 ?>
-  
+
     <div class="parallax-container" style="height: 200px !important;">
-      <div class="parallax"><img src=<?php echo $URL.'wp-content/uploads/sites/4/2018/08/sec4.png'; ?>></div>
+      <div class="parallax"><img src="http://pet.ufma.br/wp-content/uploads/sites/4/2018/09/back.png"></div>
       <!--<h3 class="center nunito white-text" style="padding: 3.5%; font-size: 60px;"> PET UFMA </h3>-->
       <div class="container center">
         <div id="search-box-side">
@@ -34,7 +34,7 @@
     <div class="row">
         <div class="col s12 m9 l9 xl9 body-side-result">
 
-        <?php                        
+        <?php
         //query
         $posts = my_query_posts($_POST['search']);
 
@@ -42,7 +42,7 @@
         $cont = 0;
         foreach ($posts as $post){
             $cont++;
-            if($cont <= 5){ 
+            if($cont <= 5){
         ?>
                 <div class="card-panel card-news color-link">
                     <h4 class="black-text nunito color-link"><?php echo $post->post_title; ?></h4>
@@ -65,7 +65,7 @@
 
                 </div>
         <?php
-            }                 
+            }
         ?>
 
 

@@ -4,7 +4,7 @@
  *
  * @package SiteGeralPETUFMA
  * @since SiteGeralPETUFMA 0.1
- * 
+ *
  */
 
 if ( ! function_exists( 'materialize_css_setup' ) ) :
@@ -23,7 +23,7 @@ function materialize_css_setup() {
 	 * Se você está construindo um tema baseado em materialize css, use um localizar e substituir
 	 * para alterar 'materialize-css' para o nome do seu tema em todos os arquivos de modelo.
 	 */
-	
+
 	load_theme_textdomain( 'materialize-css', get_template_directory() . '/languages' );
 
 	// Adicione postagens e comentários padrão de links de feed RSS no cabeçalho.
@@ -35,7 +35,7 @@ function materialize_css_setup() {
 	 * codificação <title> codificada no cabeçalho do documento e espera que o WordPress
 	 * fornecer para nós.
 	 */
-	
+
 	add_theme_support( 'title-tag' );
 
 	add_theme_support( 'custom-logo', array(
@@ -49,7 +49,7 @@ function materialize_css_setup() {
 	*
 	* @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	*/
-	
+
 	add_theme_support( 'post-thumbnails' );
 
 	// Este tema usa wp_nav_menu () em um local.
@@ -59,12 +59,12 @@ function materialize_css_setup() {
 			'secondary' => esc_html('Secondary')
 		)
 	);
-	
+
 	/*
 	 * Mudar a marcação principal padrão para formulário de pesquisa, formulário de comentário e comentários
 	 * para saída de HTML5 válido.
 	 */
-	
+
 	add_theme_support( 'html5', array(
 		'search-form',
 		'comment-form',
@@ -95,7 +95,7 @@ add_action( 'after_setup_theme', 'materialize_css_setup' );
   *
   * @global int $content_width
   */
-  
+
 function materialize_css_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'materialize_css_content_width', 640 );
 }
@@ -145,17 +145,19 @@ function materialize_css_widgets_init() {
  * Enfileirar scripts e estilos.
  */
 function materialize_css_scripts() {
-	if( !is_admin()){	 
+	if( !is_admin()){
 	 	wp_deregister_script('jquery');
 	 	wp_enqueue_script( 'materialize-css-jquery', 'https://code.jquery.com/jquery-2.1.1.min.js', '', null, true );
 	}
 
 	//wp_enqueue_style('materialize_css-style', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css', '', null, false);
-	
+
 	wp_enqueue_style('materialize_css-style', 'https://pet.ufma.br/wp-content/themes/SitePetGeral/css/materialize.min.css', '', null, false);
 
-	wp_enqueue_style('style', get_stylesheet_uri() );
-	 
+	//wp_enqueue_style('style', get_stylesheet_uri() );
+
+	wp_enqueue_style('style', 'http://localhost/petufma/wp-content/themes/SitePetGeral/style.css' );
+
 	//wp_enqueue_script('materialize_css_scripts', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js', '', null, true);
 
 	wp_enqueue_script('materialize_css_scripts', 'https://pet.ufma.br/wp-content/themes/SitePetGeral/js/materialize.min.js', '', null, true);
@@ -188,14 +190,14 @@ function materialize_controls($wp_customize)
 		'description' => 'Escolha a imagem do Footer',
 		'priority'   => 30,
 	));
- 
+
 	// Add setting
 	$wp_customize->add_setting(
 		'materialize_colors',
 		array('default' => 'http://localhost/wordpress/wp-content/uploads/2018/03/logofooter.png')
 	);
- 
-	// Add control 
+
+	// Add control
 	$wp_customize->add_control('materialize_color_selector',
 	array(
 		'label' => 'URL image ?',
@@ -210,20 +212,20 @@ function materialize_controls($wp_customize)
 function my_query_posts($busca){
 	global $wpdb;
 	$itens = $wpdb->get_results("SELECT post_title, ID, post_content FROM `wp_posts` WHERE `post_status` ='publish' AND `post_type`='post' AND `post_title` LIKE '%$busca%' ORDER BY post_date");
-	
+
 	/*Se não foi encontrado, retorna falso*/
 	if (empty($itens))
 		return false;
 	//Retorna o vetor de resultados, caso seja encontrado
 	return $itens;
-	
+
 }
 
 //Busca as categorias do post
 function my_query_categories($id){
 	global $wpdb;
 	$itens = $wpdb->get_results("SELECT wp_terms.name FROM wp_terms, wp_term_relationships,wp_term_taxonomy WHERE wp_term_relationships.object_id ='$id' AND wp_term_relationships.term_taxonomy_id = wp_term_taxonomy.term_taxonomy_id AND wp_terms.term_id = wp_term_taxonomy.term_id");
-	
+
 	/*Se não foi encontrado, retorna falso*/
 	if (empty($itens))
 		return false;
@@ -233,7 +235,7 @@ function my_query_categories($id){
 }
 
 //Consulta as informações do grupo pet
-function query_pet_home_theme(){ 
+function query_pet_home_theme(){
 	global $wpdb;
 	$itens = $wpdb->get_results("SELECT * FROM `wp_custom_equipe` WHERE `grupo_pet`= 1");
 	if (empty($itens)){
@@ -245,7 +247,7 @@ function query_pet_home_theme(){
 
 //=========================================================
 //consulta todos os petianos
-function query_petianos_theme(){ 
+function query_petianos_theme(){
 	global $wpdb;
 	$itens = $wpdb->get_results("SELECT * FROM `wp_custom_equipe` WHERE `grupo_pet`= 0 AND `classificacao` = 'Petianos'");
 	if (empty($itens)){
@@ -255,4 +257,3 @@ function query_petianos_theme(){
 	return $itens;
 }
 add_action('customize_register', 'materialize_controls');
-
