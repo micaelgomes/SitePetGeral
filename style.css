@@ -255,7 +255,7 @@ Tags: PET, PETUFMA, Materialize
 }
 
 .border-color-link {
-  border-color: #FFF !important;
+  border-color: #18CDCA !important;
 }
 
 .icon-color{
@@ -377,6 +377,43 @@ Tags: PET, PETUFMA, Materialize
     position: sticky;
 }
 
+/*   SIDEBAR   */
+/* unvisited link */
+.border-citacao-post a:link {
+    color: #18CDCA;
+}
+
+/* visited link */
+.border-citacao-post a:visited {
+    color: #000;
+}
+
+/* mouse over link */
+.border-citacao-post a:hover {
+    color: #FF5349;
+}
+
+/* selected link */
+.border-citacao-post a:active {
+    color: #292C44;
+}
+
+.color-link a:link {
+    color: #18CDCA !important;
+}
+
+.color-link a:visited {
+    color: #000 !important;
+}
+
+.color-link a:hover {
+    color: #FF5349 !important;
+}
+
+.body-side-archive {
+    padding-left: 7% !important;
+}
+
 /*   404   */
 .container-404 {
     padding: 4%;
@@ -390,4 +427,14 @@ Tags: PET, PETUFMA, Materialize
     color: #FFF;
     background-color: #18CDCA;
     text-shadow: 2px 2px #444;
+}
+
+/*    IMAGEM DA PÁGINA DE GRUPOS  */
+.estilo-img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
 }

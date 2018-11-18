@@ -11,18 +11,18 @@
 
 <?php
     get_header();
-    $URL = 'https://pet.ufma.br/';
-    //$URL = 'http://localhost/wordpress/';
+    //$URL = 'https://pet.ufma.br/';
+    $URL = 'http://localhost/petufma/';
     $pagename = get_query_var('pagename');
 ?>
 
     <div class="parallax-container" style="height: 200px !important;">
-      <div class="parallax"><img src=http://pet.ufma.br/wp-content/uploads/sites/4/2018/09/back.png; ?>></div>
+      <div class="parallax"><img src=http://pet.ufma.br/wp-content/uploads/sites/4/2018/09/back.png;></div>
       <!--<h3 class="center nunito white-text" style="padding: 3.5%; font-size: 60px;"> PET UFMA </h3>-->
       <div class="container center">
         <div id="search-box">
             <div id="search-form">
-            <form method="post" id="search-form" action= "/wordpress/index.php/busca"/>
+            <form method="post" id="search-form" action=<?php echo $URL . "index.php/noticias/" ?>>
                 <input  name = "search" id="search-text" type="text" placeholder=" Faça uma busca... ">
                 <button type="submit" id="search-button" onclick="">Pesquisar</button>
             </form>
@@ -39,10 +39,8 @@
         $posts = my_query_posts($_POST['search']);
 
     if ( $posts!=false){
-        $cont = 0;
         foreach ($posts as $post){
             $cont++;
-            if($cont <= 5){
         ?>
                 <div class="card-panel card-news color-link">
                     <h4 class="black-text nunito color-link"><?php echo $post->post_title; ?></h4>
@@ -64,11 +62,6 @@
                 ?>
 
                 </div>
-        <?php
-            }
-        ?>
-
-
         <?php
         }
     }else{
