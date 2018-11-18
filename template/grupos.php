@@ -53,7 +53,7 @@ $petianos_comp = rest_api_php_object("https://pet.ufma.br/comp/wp-json/pethome/v
 <!--PET COMPUTAÇÃO-->
 <div class="row">
 	<div class="container">
-		<div class="col xl6 l6 m6 s6">
+		<div class="col xl6 l6 m12 s12">
 			<div class="card">
 		    <div class="card-image waves-effect waves-block waves-light">
 		      <img class="activator" src=<?php echo $pet_comp->imagem; ?>>
@@ -84,7 +84,7 @@ $petianos_comp = rest_api_php_object("https://pet.ufma.br/comp/wp-json/pethome/v
 				  echo '<div class="carousel">';
 				  foreach ($petianos_comp as $key => $petiano) {
 					  if(strcmp($petiano->classificacao, "Petianos") == 0){
-						  echo '<a class="carousel-item estilo-img" href="#"><img src='.$petiano->imagem.'></a>';
+						  echo '<a class="carousel-item estilo-img"><img src='.$petiano->imagem.'></a>';
 						  //echo '<p><img class="carousel-item estilo-img" src='.$petiano->imagem.'>'.$petiano->nome.'</p>';
 					  }
 				  }
