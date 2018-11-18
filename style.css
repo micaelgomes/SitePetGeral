@@ -11,43 +11,6 @@ Text Domain: SiteGeralPETUFMA
 Tags: PET, PETUFMA, Materialize
 */
 
-/**
- * Table of Contents
- *
- * 1.0 - Reset
- * 2.0 - Genericons
- * 3.0 - Typography
- * 4.0 - Elements
- * 5.0 - Forms
- * 6.0 - Navigations
- *   6.1 - Links
- *   6.2 - Menus
- * 7.0 - Accessibility
- * 8.0 - Alignments
- * 9.0 - Clearings
- * 10.0 - Header
- * 11.0 - Widgets
- * 12.0 - Content
- *    12.1 - Posts and pages
- *    12.2 - Post Formats
- *    12.3 - Comments
- * 13.0 - Footer
- * 14.0 - Media
- *    14.1 - Captions
- *    14.2 - Galleries
- * 15.0 - Multisite
- * 16.0 - Media Queries
- *    16.1 - Mobile Large
- *    16.2 - Tablet Small
- *    16.3 - Tablet Large
- *    16.4 - Desktop Small
- *    16.5 - Desktop Medium
- *    16.6 - Desktop Large
- *    16.7 - Desktop X-Large
- * 17.0 - Print
- */
-
-
 /*   ====================   START    =======================   */
 /*   SET => menu/parallax/buttonColor   */
 @media {
@@ -349,21 +312,69 @@ Tags: PET, PETUFMA, Materialize
 }
 
 /*   NOTÍCIA   */
-.titulonews{
-    font-size: 20px;
+/*   BARRA DE PESQUISA   */
+#search-box {
+    position: relative;
+    /*width: 70%;*/
+    /*margin: -43px;*/
+	padding: 10%;
+	padding-left: 3% !important;
+    padding-top: 8.5% !important;
+    /*padding-bottom: 6%;*/
+}
+
+#search-form {
+    height: 45px;
+    border: none;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius: 5px;
+    background-color: white;
+    overflow: hidden;
+}
+
+#search-text {
     font-weight: bold;
+    font-size: 14px;
+    color: #ddd;
+    border-width: 0;
+    background: transparent;
 }
 
-.descnews{
-    font-size: 25px;
-    font-weight: 300;
-    letter-spacing: 1px;
+#search-box input[type="text"]{
+    width: 82.2%;
+    padding: 1px 1px 1px 10px;
+    color: #333;
+    outline: none;
 }
 
-.horarionews{
-    font-size: 11px;
-    color: gray;
-    letter-spacing: 1px;
+#search-button {
+    position: absolute;
+    height: 45px;
+    width: 18.8%;
+    font-size: 14px;
+	font-weight: bold;
+    color: #fff;
+    text-align: center;
+    line-height: 42px;
+    border-width: 0;
+    background-color: #292C44;
+    -webkit-border-radius: 0px 5px 5px 0px;
+    -moz-border-radius: 0px 5px 5px 0px;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+}
+
+#search-box button:hover {
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    background-color: #4d90fe;
+    color: white;
+    border: none;
+}
+
+.searchicon{
+    position: sticky;
 }
 
 /*   404   */
